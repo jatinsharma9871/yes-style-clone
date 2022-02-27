@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Place Order | YesStyle</title>
+    <link rel="icon" type="image/png" href="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2911/imgs/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="/css/checkout.css">
+</head>
+<body>
+    <!-- // top container -->
+    <div id="container">
+        <div id="checkoutcontainer">
+            <div id="yesImg"><img src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2911/imgs/yesstyle.svg" width="151" height="23"></div>
+            <div id="checkout"><h2>CHECKOUT</h2></div>
+            <div id="norton"><img src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2911/imgs/payment/norton_secured.svg" alt=""></div>
+        </div>
+    </div>
+    
+    <!-- bottom container -->
+    <div id="bottomContainer">
+        <div id="left">
+            <h3>CHECKOUT OPTIONS</h3>
+            <button id="direct">CONTINUE YESSTYLE CHECKOUT</button>
+            <p class="copyright">
+                Copyright © 2006-2021 YESSTYLE.COM LTD. All rights reserved. <br>
+                <a class="anchor" href="https://www.yesstyle.com/rest/help/v1/helptopic/1741">Terms Of Use</a>
+                | 
+                <a class="anchor" href="https://www.yesstyle.com/rest/help/v1/helptopic/1577">Privacy Policy</a>
+            </p>
+        </div>
+        
+        
+        <div id="right">
+            <div id="items">
+                <h3>1 ITEMS</h3>
+                <button class="itembtn"><img src="https://cdn-icons-png.flaticon.com/512/1659/1659682.png" height="20px" width="20px"></button>
+            </div>
+
+            <div id="itemlist">
+            </div>
+
+            <div id="estDate">
+                <span><strong>Estimated ship out date:Oct.02,2021</strong></span>
+                <button><img src="https://cdn-icons-png.flaticon.com/512/42/42446.png" alt=""></button>
+            </div>
+            <div id="coupon">
+                <a href="https://www.yesstyle.com/en/shopping-bag.html">Have a Coupon or Rewards Code?</a>
+                <span><img src="https://cdn-user-icons.flaticon.com/53600/53600598/1632914774874.svg?token=exp=1632920674~hmac=f33e3db1c87e51a49a0bfa71a717f690" alt=""></span>
+                 
+                <div style="display: flex; width: 100%; height: 40px;align-items: center;"><form action="" style="width: 100%;" onsubmit="applyCode(event)"> 
+                    <input type="text"  id="ip1" placeholder="ENTER COUPON CODE" required>
+                    <input type="submit"  id="submit" value="Apply Code">
+                </form></div>
+            </div>
+
+            <div id="orderSum">
+                <h3 style="margin-top: 50px;">ORDER SUMMARY</h3>
+                <div id="box">
+                <div id="sp1" class="txtleft"></div>
+                <div id="sp2" class="txtright"></div>
+                <div id="sp3" class="txtleft">Shipping(Standard)</div>
+                <div id="sp4"  class="txtright"></div>
+                <div class="txtleft">Sales Tax<i><img src="https://cdn-user-icons.flaticon.com/53600/53600598/1632917227499.svg?token=exp=1632920674~hmac=93aa0d58fbcba54a6a9346e0e33c94c4" alt=""></i></div>
+                <div  class="txtright tbd" >TBD</div>
+            </div>
+                <div id="estimated">
+                    <div class="txtleft">Estimated Total</div>
+                    <div id="total" class="txtright"></div>
+                </div>
+                <div id="earn">
+                <div class="txtleft">By completing this order you earn <i><img src="https://cdn-user-icons.flaticon.com/53600/53600598/1632917227499.svg?token=exp=1632920674~hmac=93aa0d58fbcba54a6a9346e0e33c94c4" alt=""></i></div>
+                <div class="txtright"><strong>4 YS Points</strong></div>
+            </div>
+            <div id="ys"><p>YS Points will be granted once your order is approved. Your total YS Points may be recalculated when the order is shipped, depending on cancellations, refunds or other changes.</p></div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let itemlist = document.getElementById("itemlist");
+
+let cart_items = JSON.parse(localStorage.getItem('cart_items'));
+
+console.log(cart_items);
+// let cart_items = [
+//   {
+//     price: 10,
+//     name: "COSRX - Acne Pimple Master Patch",
+//     quantity: 1,
+//     img: "https://d1flfk77wl2xk4.cloudfront.net/Assets/07/812/M_p0056481207.jpg",
+//   },
+//   {
+//     price: 10,
+//     name: "COSRX - Acne Pimple Master Patch",
+//     quantity: 1,
+//     img: "https://d1flfk77wl2xk4.cloudfront.net/Assets/07/812/M_p0056481207.jpg",
+//   },
+//   {
+//     price: 10,
+//     name: "COSRX - Acne Pimple Master Patch",
+//     quantity: 1,
+//     img: "https://d1flfk77wl2xk4.cloudfront.net/Assets/07/812/M_p0056481207.jpg",
+//   },
+//   {
+//     price: 10,
+//     name: "COSRX - Acne Pimple Master Patch",
+//     quantity: 1,
+//     img: "https://d1flfk77wl2xk4.cloudfront.net/Assets/07/812/M_p0056481207.jpg",
+//   },
+//   {
+//     price: 10,
+//     name: "COSRX - Acne Pimple Master Patch",
+//     quantity: 1,
+//     img: "https://d1flfk77wl2xk4.cloudfront.net/Assets/07/812/M_p0056481207.jpg",
+//   },
+//   {
+//     price: 10.0,
+//     name: "COSRX - Acne Pimple Master Patch",
+//     quantity: 1,
+//     img: "https://d1flfk77wl2xk4.cloudfront.net/Assets/07/812/M_p0056481207.jpg",
+//   },
+//   {
+//     price: 10,
+//     name: "COSRX - Acne Pimple Master Patch",
+//     quantity: 1,
+//     img: "https://d1flfk77wl2xk4.cloudfront.net/Assets/07/812/M_p0056481207.jpg",
+//   },
+// ];
+var total_items = 0;
+var sum_price = 0;
+cart_items.forEach(function (item) {
+  let div1 = document.createElement("div");
+  let div2 = document.createElement("div");
+  let div = document.createElement("div");
+  let qnt = document.createElement("div");
+  let img = document.createElement("img");
+  let head = document.createElement("h3");
+  let line1 = document.createElement("p");
+  let line2 = document.createElement("p");
+  let line3 = document.createElement("p");
+
+  qnt.textContent = item.quantity;
+  img.src = item.images.split("~")[0];
+  head.textContent = "INR- " + item.price;
+  line1.textContent = item.name;
+  line2.textContent = item.quantity + "pc";
+  line3.textContent = "In-Stock - Usually ships within 24 hours";
+
+  div2.append(head, line1, line2, line3);
+
+  div1.append(img);
+
+  div.append(div1, div2);
+
+  itemlist.append(qnt, div);
+
+  div.setAttribute("class", "div");
+
+  div1.setAttribute("class", "div1");
+
+  div2.setAttribute("class", "div2");
+
+  img.setAttribute("class", "img");
+
+  head.setAttribute("class", "head");
+
+  line1.setAttribute("class", "txt");
+
+  line2.setAttribute("class", "txt");
+
+  line3.setAttribute("class", "txt");
+
+  qnt.setAttribute("class", "qnt");
+
+  total_items += +item.quantity;
+  sum_price += (+item.price)*(+item.quantity);
+});
+
+let span1 = document.getElementById("sp1");
+let span2 = document.getElementById("sp2");
+let span4 = document.getElementById("sp4");
+
+var total_price = sum_price + 50;
+var total = document.getElementById("total");
+
+span1.textContent = `Items Total (${total_items} pcs)`;
+span2.textContent = `INR- ${sum_price.toFixed(2)}`;
+span4.textContent = `INR- 50.00`;
+total.textContent = `INR- ${total_price.toFixed(2)}`;
+
+let redirect = document.getElementById("direct");
+
+redirect.onclick = function () {
+  window.location.href = "/products/pay";
+};
+
+var submit = document.getElementById("submit");
+
+var coupon = document.getElementById("ip1").value;
+
+submit.addEventListener("click", applyCode);
+
+var count = 1;
+function applyCode(e) {
+  e.preventDefault();
+
+  if (count == 1) {
+    if (document.getElementById("ip1").value == "masai30") {
+      total_price = total_price - 0.3 * total_price;
+      total.textContent = `US$ ${total_price.toFixed(2)}`;
+      alert("Congratulations You have Won 30% OFF On Coupon Code");
+    } else if (coupon != "masai30") {
+      alert("Sorry You Are Not Eligible For Rewards!");
+    }
+    count++;
+    document.getElementById("ip1").value = "";
+  }
+}
+
+</script>

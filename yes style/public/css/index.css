@@ -1,0 +1,1200 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+hr {
+    border: none;
+    height: 1.8px;
+    background: #DDDDDD;
+}
+body {
+    position: absolute;
+    z-index: 80;
+}
+
+header {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 70;
+    margin-bottom: 10px;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.1);
+}
+
+.headerBox {
+    height: 100%;
+}
+
+.upperHalfInNav,
+.lowerHalfInNav {
+    height: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.upperHalfItems {
+    display: flex;
+}
+
+.upperHalfItems {
+    width: 93%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    /* border: 2px solid blue; */
+}
+
+.firDivUpperHalf,
+.secDivUpperHalf,
+#headerMainLogo {
+    width: 20%;
+    display: flex;
+    gap: 10%;
+}
+
+.firDivUpperHalf img {
+    width: 27px;
+    height: 27px;
+}
+.secDivUpperHalf img {
+    width: 27px;
+    height: 27px;
+}
+
+.btn-icons {
+    flex-basis: 8%;
+    border: none;
+    background-color: white;
+}
+
+.smallIcons {
+    width: 15px;
+    height: 15px;
+}
+
+
+#headerMainLogo {
+    height: 50%;
+    align-self: center;
+}
+
+.secDivUpperHalf {
+    justify-content: end;
+}
+
+.lowerHalfItems {
+    margin-top: 10px;
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(7,16%);
+    gap: 1%;
+    justify-content: center;
+    color: #534848;
+    font-size: 100%;
+    align-items: center;
+}
+
+.lowerHalfItems > div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/* dropdown for login icon */
+
+#dropdown_login {
+    display: none;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2,50%);
+    width:200px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 3em;
+    z-index: 130;
+    font-size: 20px;
+    background-color: rgb(252, 252, 252);
+}
+
+#dropdown_track {
+    display: none;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2,50%);
+    width:200px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 3em;
+    z-index: 130;
+    font-size: 20px;
+    background-color: rgb(252, 252, 252);
+}
+
+
+/* drop boxes styling */
+.dropbox_styling {
+    width: auto;
+    height: 500px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 6rem;
+    z-index: 80;
+    background-color: white;
+    box-shadow: 0px 46px 46px 0px rgba(0,0,0,0.3);
+
+}
+
+#new_in_dropbox {
+    display: none;
+}
+
+#new_in:hover #new_in_dropbox {
+    display: grid;
+    grid-template-columns:  18% repeat(3, 15%);
+    grid-template-rows: 100%;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+#beauty_dropbox {
+    display: none;
+}
+
+#beauty:hover #beauty_dropbox {
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: 100%;
+    gap: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+#women_dropbox {
+    display: none;
+}
+
+#women:hover #women_dropbox {
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: 100%;
+    gap: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+#men_dropbox {
+    display: none;
+}
+
+#men:hover #men_dropbox {
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: 100%;
+    gap: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+#lifestyle_dropbox {
+    display: none;
+}
+
+#lifestyle:hover #lifestyle_dropbox {
+    display: grid;
+    grid-template-columns: 18% repeat(3,15%);
+    grid-template-rows: 100%;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+#sale_dropbox {
+    display: none;
+    
+}
+
+#saleRedirector:hover #sale_dropbox {
+    display: grid;
+    grid-template-columns: 18% repeat(3,15%);
+    grid-template-rows: 100%;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box-1 {
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    background-color: rgba(236, 233, 233, 0.938);
+}
+.box-2 {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 40%;
+    align-items: center;
+
+    gap: 3%;
+    
+    /* background-color: yellow; */
+}
+.box-3 {
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.box-4 {
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.box-5 {
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.box-1 > ul {
+    font-size: 15px;
+}
+.box-1 > li {
+    margin: 3pxs;
+}
+  .box-2 > ul {
+    font-size: 15px;
+}
+
+  .box-2 > li {
+    margin: 3px;
+}
+
+  .box-3 ul {
+    font-size: 15px;
+}
+
+ .box-3 > li {
+    margin: 3px;
+}
+
+ .box-4 ul {
+    font-size: 15px;
+}
+
+ .box-4 > li {
+    margin: 3px;
+}
+.box-5 > ul {
+    font-size: 15px;
+}
+.box-5 > li {
+    margin: 3px;
+}
+
+
+
+/* dropbox search bar styling  */
+
+#dropbox_search_bar {
+    display: flex;
+    visibility: hidden;
+    width: auto;
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    right: 0px;
+    top: 5rem;
+}
+
+#dropbox_search_bar input {
+    width: 60%;
+    height: 80%;
+    font-size: 25px;
+}
+
+#dropbox_search_bar span {
+    position: absolute;
+    right: 2%;
+    font-size: 25px;
+    cursor: pointer;   
+
+}
+
+
+/* common styling for all */
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+}
+li {
+    margin: 8px;
+}
+strong {
+    font-size: 15px;
+}
+img {
+    width: 100%;
+    height: 80%;
+}
+
+.box {
+    margin-top: 20px;
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.back-white{
+    background-color: white;
+}
+
+.main-cont{
+    position: relative;
+    top: 100px;
+    width: 80%;
+    height: 500vh;
+    
+    margin: auto;
+}
+
+.firstDiv{
+    position: relative;
+    top: 100px;
+    width: 90%;
+    /* z-index: 125; */
+    margin: auto;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.firstDiv button{
+    flex-grow: 30%;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.newArr_whatsHot_Pants{
+    width: 90%;
+    margin: auto;
+    height: 350px;
+}
+
+.recommendedBox{
+    height: 500px;
+    margin-top: 2.5%;
+    background-color: white;
+    text-align: center;
+}
+
+.content{
+    height: 80%;
+
+}
+
+.boxHeadings{
+    font-size: 27px;
+    margin: 15px;
+}
+ 
+.productsHolder{
+    margin: 2%;
+    height:70%;
+    display: grid;
+    text-align: start;
+    grid-template-columns: repeat(6,15.44%);
+    gap: 1.5%;
+}
+
+.productsImages{
+    max-width: 100%;
+}
+
+#productsTitle{
+    margin-bottom: 7px;
+}
+
+.btnAfterProducts{
+    background-color: #333333;
+    width: 13%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.btnAfterProducts:hover{
+    background-color: #4CAF50;
+    border: none;
+}
+
+.btnHolderDiv{
+    height: 8%;
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
+
+.recentlyViewedBox{
+    margin-top: 10px;
+ height: 400px;
+ text-align: center;
+ background-color: white;
+}
+
+.textAlignCenter{
+    text-align: center;
+}
+
+.textColorWhite{
+    color: white;
+}
+
+.recentlyViewedBox *{
+    background-color: white;
+}
+
+.btnBackgroundBlack{
+    background-color: #333333;
+}
+
+.btnHolderDivForRecentlyViewed{
+    height: 10%;
+}
+
+.productsImagesInRecentlyViewedBox{
+    max-width: 100%;
+}
+
+.boxHeadings{
+    padding-top: 15px;
+}
+
+.yesStylistBox{
+    height: 350px;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.contentInYesStylistBox{
+    height: 100%;
+}
+
+#yesStylistBoxContent{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    gap: 2%;
+}
+
+.firstContentYesStylist{
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.secondContentYesStylist{
+
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.imagesInYesStylistBox{
+    max-width: 100%;
+    min-height: 100%;
+}
+
+#secondHalfOfFirst_YesStylist{
+    background-color: #E1E9FF;
+    
+}
+#secondHalfOfFirst_YesStylist button {
+    margin-bottom: 10px;
+}
+
+#secondHalfOfSecond_YesStylist{
+    background-color: #F2E6D6;
+}
+
+#secondHalfOfSecond_YesStylist button{
+    margin-bottom: 10px;
+}
+
+.titleInYesStylist{
+    font-size: 20px;
+    margin: 23px;   
+}
+
+.descInYesStylist{
+    margin:23px 23px ;
+    color: #666666;
+}
+
+.btnInYesStylist{
+    margin-left: 23px;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #333333;
+}
+
+.btnInYesStylist:hover{
+    background-color: #4CAF50;
+    border: none;
+}
+
+.notableBrandsBoxMain{
+    margin-top: 2.5%;
+    height: 400px;
+    text-align: center;
+}
+
+.contentInNotableBrand{
+    height: 400px;
+}
+
+
+
+#notableBrandsBox{
+    grid-template-rows: repeat(2, 47.5%);
+    height: 45%;
+    text-align: center;
+    grid-row-gap: 5%;
+}
+
+#notableBrandsBox > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#notableBrandsBox > div>img{
+    max-width:50% ;
+}
+
+.btnMoreBrandsAtBefFooter{
+    height: 10%;
+}
+
+#btnViewBrandsBeforeFooter{
+    width: 15%;
+}
+
+.flashSalesFromThreeDollars{
+    height: 500px;
+    margin-top: 5%;
+    background-size: cover;
+    text-align: center;
+    background-image: url("https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/share/l_lowest_price_ever.jpg");
+}
+
+.flashSalesTitle{
+    color: white;
+    margin: 10px;
+    text-shadow: 1px 1px 2px white, 0 0 1em rgb(172, 181, 206), 0 0 1em blue;
+    font-family: 'dm serif display' sans-serif ;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.flashSalesFromThreeDollars > span {
+    margin: 2px;
+    width: 4%;
+    padding-bottom: 8px;
+    margin: 6px;
+    display: inline-block;
+    height: 4.5%;
+    font-family: lato;
+    font-size: 130%;
+    text-overflow: ellipsis;
+    text-align: center;
+    border-radius: 5px;
+    align-items: center;
+    color: black;
+    background-color: white;
+}
+
+
+.flashSalesContentBox{
+    margin: 1% 2.5% 1% 2.5%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 1.7%;
+}
+
+.flashSalesContentBox > div{
+    border-radius: 20px;
+    background-color: white;
+    text-align: start;
+    padding-bottom: 10px;
+}
+
+.flashSalesContentBox > div p{
+    text-align: start;
+    margin-left: 5%;
+}
+
+.flashSalesContentBox > div img{
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+#claimedPercInFleshSales{
+    color: #7F667F;
+}
+
+.textAfterFlashSales{
+    font-size: 18px;
+    color: #C3C5DA;
+    margin-top: 30px;
+}
+
+.flashSalesUpToTwentyFive{
+    height: 500px;
+    margin-top: 2.5%;
+    background-size: cover;
+    text-align: center;
+    /* background: -webkit-radial-gradient(#51CFB7, #521BC7, #9E11A8, #FE1483 ); */
+    /* background: -webkit-radial-gradient(#FE1483, #9E11A8,#521BC7, #51CFB7); */
+    /* background: -webkit-repeating-radial-gradient(#FE1483, #9E11A8,#521BC7, #51CFB7);     */
+    /* background: -webkit-repeating-linear-gradient(#51CFB7, #521BC7,#9E11A8, #FE1483); */
+    background: linear-gradient(to bottom right, #FE1483, #9E11A8,#521BC7, #51CFB7);
+
+}
+
+.fleshSalesUptoTwentyFiveContent{
+    height: 55%;
+}
+
+#btnInFlashSalesUptoBox{
+    height:90%;
+}
+
+.btnHolderDivUnderTwentyFive{
+    margin-top: 2%;
+}
+
+.stockClearanceBox{
+    margin-bottom: 5%;
+    height: 500px;
+    margin-top: 2.5%;
+    /* background-size: 600px;
+    background-size: cover; */
+    text-align: center;
+    background-position: -27.5% 75%, 130% 40%;
+    background-repeat: no-repeat;
+    background-color: #D70033;
+    background-image: url("https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/share/instock_deco.png"),url("https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/share/instock_deco.png");
+}
+
+.flashSalesInStockClearance{
+    text-shadow: 1px 1px 2px white, 0 0 1em #D70033, 0 0 1em red;
+
+}
+
+.stockClearanceContent{
+    height: 60%;
+}
+
+#flashSalesInStockClearanceContent{
+    display: grid;
+    grid-template-columns: repeat((5,auto));
+    gap: 2%;
+}  
+/* pummy */
+
+#mySlideshow {
+    position: relative;
+    top: 100px;
+    width: 90%;
+    margin: auto;
+}
+
+#mySlideshow >img {
+    
+   width: 100%;
+   height: 400px;
+}
+#collage {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin: auto;
+    height: 300px;
+    justify-content: space-around;
+    display: flex;
+}
+
+#collage>div:nth-child(1){
+   margin-right: 10%;
+}
+
+#over {
+    position:absolute;
+    height: 150px;
+    width: 400px;
+    margin-top: 70px;
+    z-index: 50;
+    box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(130deg, #fef1b4, #ffc7d4 70%);
+   border-radius: 10px;
+
+}
+#photoleft #photoright{
+    position: relative;
+    z-index: 0;
+}
+#insidetxt{
+    text-align: center;
+    padding-top: 20PX;
+}
+.bt:hover {
+    background-color:#4caf50;
+}
+.bt{
+    background-color:#333333;
+    width: 110px;
+    height: 30px;
+    color: whitesmoke;
+     font-weight:bold;
+     margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+}
+
+#Av {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+
+}
+
+#Av>div {
+    width: 30%;
+    margin: 1%;
+}
+
+#first {
+    background-image: url('https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/21wk35/pb_new_arrivals.jpg');
+    background-size: cover;
+    height: 200px;
+}
+#second{
+    background-image: url('https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/21wk35/pb_bestsellers.jpg');
+    background-size: cover;
+    height: 200px;
+}
+#third{
+    background-image: url('https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/21wk39/pb_pants_w.jpg');
+    background-size: cover;
+    height: 200px;
+}
+
+#indiv {
+    width: 80%;
+    margin: auto;
+    align-self: flex-end;
+    margin-top: 50%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 8px;
+    line-height: 0px;
+    text-align: center;
+    background-color: white;
+    box-shadow:0px 16px 16px 0px rgba(0,0,0,0.6);
+}
+#ptxt{
+    color: #a5a5a5;
+    font-size: 13px;
+}
+
+
+#topCategories{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    
+}
+#topCategories>div{
+    margin: 10px;
+}
+
+.topimg{
+    border-radius: 100%;
+    width: 100%;
+    margin:1%;
+}
+#txt{
+    text-align: center;
+}
+#heading{
+    text-align: center;
+}
+
+#shopBeauty{
+    width: 100%;
+    margin: auto;
+    margin-top: 80px;
+    box-sizing: border-box;
+    background-image: url('https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/21wk39/l_be_endofseason_b.jpg');
+    background-size: cover;
+    height: 150px;
+}
+#simg{
+    width: 100%;
+}
+#lastBox{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-top: 20px;
+}
+#fstbox{
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url('https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/extra/fashion_acces.jpg');
+    background-size: cover;
+    height: 150px;
+}
+#lstbox{
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url('	https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/extra/home_lifestyle.jpg');
+    background-size: cover;
+    height: 150px;
+}
+
+#insidetxt{
+    text-align: center;
+    padding-top: 20PX;
+}
+
+#check{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+
+#box1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#box1>div{
+    margin: 0.5%;
+}
+#box2{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    margin-top: -4%;
+}
+#box2>div{
+    margin: 0%;
+}
+img{
+    width: 100%;
+}
+#middelbox{
+    flex-grow: 1;
+    height: 60px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+/* horizontal line  */
+
+.hrline {
+    /* position: absolute; */
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+
+
+/* footer */
+
+#footer {
+    /* position: relative; */
+    /* position: absolute; */
+    height: 300px;
+    width: 100%;
+    display: grid;
+    /* background-color: rgb(186, 207, 247); */
+    grid-template-columns: 90%;
+    grid-template-rows: 60% 30%;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.info_social {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 90%;
+    gap: 2%;
+    /* justify-content: center; */
+}
+
+.socialconnects {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50% 50%;
+    
+}
+
+ul {
+    list-style: none;
+    gap: 20px;
+    padding-inline-start: 0px;
+
+}
+
+li {
+    margin: 10px 10px 10px 0px;
+}
+
+.social_media_icons img {
+    width: 40px;
+    height: 40px;
+}
+
+/* universal styling  */
+
+.new_anouncement {
+    color: rgb(53, 153, 14);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.gap_lang {
+    margin: 4px;
+}
+
+.line {
+    background-color: black;
+    width: 2px;
+    height: 10px;
+    align-items: center;
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+/* @media (min-width:250px) and (max-width:815px){
+    .yesStylistBox{
+        display: none;
+    }
+    .lowerHalfInNav{
+        display: none;
+    }
+    #footer{
+        display: none;
+    }
+    .btnHolderRec{
+        margin-top: 100px;
+    }
+    #check{
+        margin-top: 100px;
+    }
+    .recentlyViewedBox{
+        margin-top: 200px;
+    }
+    #flashSalesUnderThreeContent img{
+        max-height: 50%;
+    };
+    .productsDivInsideFleshSales{
+        border: 2px solid red;
+    }
+    
+} */
+
+/* Media part */
+@media (max-width:990px){
+    .lowerHalfInNav{
+        display: none;
+    }
+    #over{
+        width: 150px;
+    }
+    #Av>div{
+        width: 50%;
+    }
+   #indiv>h3{
+       font-size: 10px;
+   }
+   #ptxt{
+       font-size: 10px;
+   }
+   #third{
+       display: none;
+   }
+   .yesStylistBox{
+       display: none;
+   }
+   #footer{
+       display: none;
+   }
+   .hrline{
+       display: none;
+   }
+   .flashSalesFromThreeDollars{
+       height: 400px;
+   }
+   .flashSalesFromThreeDollars>h1{
+       font-size: 20px;
+   }
+   .flashSalesFromThreeDollars>div{
+       height: 200px;
+       font-size: 10px;
+   }
+   #btnInFlashSalesUptoBox{
+       width: 25%;
+       height: auto;
+       padding: 2px;
+   }
+   .stockClearanceBox>h1{
+       font-size: 20px;
+   }
+   .stockClearanceBox{
+       height: 350px;
+   }
+   .stockClearanceBox>div{
+    height: 200px;
+    font-size: 10px;
+   }
+   #lastBox{
+       display: flex;
+       flex-direction: column;
+   }
+  .recommendedBox{
+      height: 300px;
+  }
+  .recommendedBox>h1{
+      font-size: 10px;
+  }
+  #btnAfterRecommendedBox{
+      width: 80%;
+      
+  }
+  .btnAfterProducts{
+      width: 30%;
+  }
+   .content>div{
+       height: 130px;
+    font-size: 0em;
+   }
+   #check>h1{
+       font-size: 18px;
+   }
+   #box2{
+       height: 150px;
+       box-sizing: border-box;
+   }
+   #box2>img{
+       width: 100%;
+   }
+   #middlebox{
+       width: 150px;
+       font-size: 8px;
+   }
+   .bt{
+       margin-top: 20px;
+   }
+   .recentlyViewedBox{
+       margin-top: 100px;
+       font-size: 10px;
+       height: 280px;
+   }
+   #btnAfterRecentlyViewed{
+        width: 40%;
+   }
+   .contentInNotableBrand{
+       height: 110px;
+   }
+   .cursorPointer{
+       font-size: 15px;
+   }
+   #btnViewBrandsBeforeFooter{
+       width: 50%;
+       height: 50px;
+   }
+   .pagesRedirector{
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+}
+

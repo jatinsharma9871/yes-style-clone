@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F1F2F6;
+}
+
+hr{
+    border: none;
+    height: 1.8px;
+    background: #dddddd;
+}
+div{
+    /* border: 0.5px solid red; */
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    position: initial;
+    display: block;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.headerBox{
+    height: 100%;
+}
+
+.upperHalfInNav, .lowerHalfInNav{
+    height: 50%;
+    background-color: white;
+    display: flex;
+}
+.lowerHalfInNav{
+    height: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    /* border-bottom: 2px solid #c2c2c2; */
+    padding-bottom: 1%;
+}
+
+.lowerHalfItems, .upperHalfItems{
+    display: flex;
+}
+
+.upperHalfItems{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 80%; 
+    /* border: 2px solid blue; */
+}
+.firDivUpperHalf, .secDivUpperHalf, #headerMainLogo{
+    width: 20%;
+    display: flex;
+    gap: 10%;
+}
+.btn-icons{
+    flex-basis: 8%;
+    border: none;
+    background-color: white;
+}
+.smallIcons{
+    max-width: 100%;
+    cursor: pointer;
+}
+#headerMainLogo{
+    height: 50%;
+    align-self: center;
+    cursor: pointer;
+}
+
+.secDivUpperHalf{
+    justify-content: end;
+}
+
+.lowerHalfItems{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    color: #534848;
+    font-size: 100%;
+    align-items: center;
+}
+
+#saleRedirector{
+    color: red;
+}
+
+.pagesRedirector:hover{
+    color: green;
+    cursor: pointer;
+    display: visible;
+}
+
+.dropdown-holder{
+   display: block;
+}
+ 
+.dropdownContent{
+    display: block;
+    background-color: #c2c2c2;
+    display: visible;
+}
+
+.main-cont{
+    width: 80%;
+    height: 150vh;
+    margin: auto;
+}
+
+.firstDiv{
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#txtShoppingBag{
+    font-size: 23px;
+    vertical-align: middle;
+}
+
+#paraTxtRegister{
+    color: #7B6666;
+    background-color: #E8E8E8;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+#covidResponseBtn{
+   justify-content: end;
+   display: inline;
+   border: none;
+    font-size: 15px;
+    cursor: pointer;
+    /* text-align: initial; */
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(100, 95, 95);
+    padding: 8px;
+}
+#covidResponseBtn > img{
+    max-width: 15px;
+}
+
+.secondDiv{
+    min-height: 10%;
+    background-color: white;
+}
+
+.thirdDiv{
+    height: 35%;
+    margin-top: 2.5%;
+    background-color: white;
+}
+
+.fourthDiv{
+    height: 500px;
+    margin-top: 2.5%;
+    background-color: white;
+}
+
+.content{
+    margin: 1%;
+    height: 90%;
+}
+
+.boxHeadings{
+    font-size: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+
+.productsHolder{
+    height: 90%;
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(6,15.44%);
+    grid-gap: 1.5%;
+    cursor: pointer;
+}
+
+.defaultButton{
+    background-color: #4CAF50;
+    padding: 10px;
+    margin-top: 1%;
+    width: 16%;
+    font-size: 100%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+}
+.content{
+    height: auto;
+}
+
+
+#cartContent{
+    display: grid;
+    grid-template-columns: 71% 28%;
+    grid-gap: 1%;
+    height: auto;
+
+}
+/* #defaultParaInCart{
+    
+} */
+
+#btnMoreFlashSales{
+    color: #ffffff;
+    background-color: #333333;
+    width: 12%;
+    position: relative;
+    left: 45%;
+    text-align: center;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    justify-content: center;
+    margin: auto;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#btnMoreFlashSales:hover{
+    background-color: #4CAF50;
+    border: none;
+}
+
+.shopAndRegisterText{
+    display: flex;
+    align-items: center;
+}
+
+.productsHolder > div img{
+    max-width: 100%;
+    border-inline-start: black;
+}
+
+.text-grey{
+    color: rgb(100, 95, 95);
+}
+
+#btnHolderatLast{
+    margin-top: 5%;
+    height: 50px;
+}
+
+/* work related to showing cart data */
+
+
+.cartItemsData{
+    height: auto;
+    margin: 1.5% 0 0 1.5%;
+}
+
+.cartItemsData hr{
+    margin-top: 15px;
+}
+
+.checkOutBox{
+    /* height: will define */
+    height: 620px;
+    background: linear-gradient(to bottom right, #66CA59,#45D27D);
+}
+
+#cartDataHead{
+    min-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    color: #4d4444;
+    text-align: start;
+    height: auto;
+}
+
+.cartItemsData > div{
+    color: #545854;
+}
+
+.itemsInCartItemsData{
+    margin: 2% 0 2% 0;
+    display: flex;
+    height: 150px;
+}
+
+.itemsInCartItemsData h1{
+    font-size: 20px;
+    color: black;
+}
+
+.imgInCartItemsData{
+    max-width: 100%;
+    max-height: 100%;
+    display: inline;
+}
+
+.imagesDivCartData{
+    max-width: 16%;
+    max-height: 100%;
+    display: inline;
+}
+
+.textDivCartData{
+    max-width: 40%;
+    margin-left: 2%;
+}
+
+#quantityTxt{
+    margin-top: 10px;
+}
+.whiteContInCheckout{
+    height: 88%;
+    margin: 1% 1% 1% 1%;
+    background-color: white;
+}
+
+.checkoutTxt{
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    margin: 5%;
+}
+
+.firstDivInWhiteBox{
+    height: 30%;
+}
+
+.secondDivInWhiteBox{
+    height: 20%;
+    background-color: #F1F2F6;
+}
+.thirdDivInWhiteBox{
+    height: 50%;
+}
+
+.headingsInFirstDivInCheckout{
+    margin: 5% 5% 0 2.5%;
+    font-size: 18px;
+}
+
+.marginLeftDouble{
+    display: flex;
+    gap: 4%;
+    margin-left: 10%;
+    margin-bottom: 2.5%;
+}
+
+
+
+.couponOrRewardsInput{
+    width: 90%;
+    height: 40%;
+}
+
+.summaryFlexes{
+    display: flex;
+    margin: 2.5%;
+    justify-content: space-between;
+}
+
+.btnCheckout{
+    background-color: #4CAF50;
+    color: white;
+    width: 96%;
+    margin: 5% 2% 2% 2%;
+    height: 15%;
+    border: none;
+    font-size: 17px;
+}
+
+.productsHolder p{
+    margin: 4% 0 4% 0;
+}
+
+.content > h1{
+    font-size: 30px;
+    margin: 3% 0 3% 0;
+}
+
+.whiteContInCheckout h4{
+    color: #4D4444;
+}
+
+.btnRemoveCartItem{
+    padding: 1% 2% 1% 2%;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Media part */
+@media (min-width:250px) and (max-width:820px){
+    
+    .lowerHalfInNav{
+        display: none;
+        border: 2px solid black;
+    }
+    /* .itemsInCartItemsData{
+        height: auto;
+        border: 2px solid black;
+    } */
+    #fir_hr{
+        display: none;
+    }
+    .itemsInCartItemsData{
+        height: auto;
+    }
+    /* .checkOutBox{
+        height: auto;
+        overflow: scroll;
+    } */
+    .contentInCheckBox{
+        height: auto;
+    }
+    /* .whiteContInCheckout{
+        width: 300px;
+    } */
+    #cartContent{
+        grid-template-columns: 45% 50%;
+        gap: 5%;
+    }
+    .marginLeftDouble img{
+        width: 30px;
+    }
+    .thirdDiv{
+        height: auto;
+    }
+    .productsHolder div{
+        height: auto;
+        overflow: hidden;
+    }
+}

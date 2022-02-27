@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      div {
+        padding: 0px;
+      }
+      #topnav {
+        display: flex;
+      }
+      #navimg {
+        padding-left: 60px;
+        padding-top: 15px;
+      }
+      #navrig {
+        margin-left: 500px;
+        margin-top: 30px;
+      }
+      a {
+        margin-left: 30px;
+      }
+      .botnav {
+        background-color: black;
+        color: white;
+        padding-left: 60px;
+        /* padding-top:15px ;
+            padding-bottom: 15px; */
+      }
+      select {
+        height: 50px;
+        padding: 0px;
+        margin: 0px;
+        line-height: 0px;
+      }
+
+      .botnav :hover {
+        background-color: rgb(3, 212, 3);
+        cursor: pointer;
+      }
+      .botnav > select {
+        background-color: black;
+        color: white;
+        border: none;
+      }
+      option {
+        background-color: gray;
+      }
+      #container {
+        display: flex;
+        width: 100%;
+        background-color: rgb(240, 241, 239);
+      }
+      #blogcont {
+        width: 100%;
+        padding-left: 60px;
+        display: flex;
+        /* grid-template-columns:repeat(3,260px) ; */
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+      #blogcont .post {
+        flex: 1 0 25%;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        background-color: white;
+        line-height: 15px;
+        min-height: 100px;
+        margin-bottom: 30px;
+        /* border:2px solid yellowgreen; */
+      }
+      #blogcont > .post > div {
+        border-radius: 10px;
+      }
+      #blogcont > div > img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .green {
+        color: green;
+      }
+      .bgrey {
+        background-color: rgb(97, 96, 96);
+        padding-left: 15px;
+        border-radius: 10px;
+      }
+      p {
+        color: rgb(85, 85, 85);
+      }
+      p,
+      h4 {
+        padding-left: 15px;
+      }
+      #blogrig {
+        padding: 30px;
+      }
+      #blogrig div {
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        margin: 30px;
+      }
+      input {
+        padding: 5px;
+      }
+      button {
+        background-color: rgb(3, 194, 3);
+        border: none;
+        padding: 7px 10px 7px 10px;
+      }
+      #blogrig {
+        width: 40%;
+      }
+      #blogrig select {
+        width: 100%;
+      }
+      option {
+        background-color: white;
+      }
+      #footer {
+        padding-left: 60px;
+      }
+      #footer > div {
+        line-height: 1px;
+        padding-top: 30px;
+      }
+      #icons {
+        display: flex;
+      }
+      #icons {
+        margin-left: 500px;
+      }
+      option {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <div id="topnav">
+        <div id="navimg">
+          <img
+            width="320px"
+            src="https://www.yesstyle.com/blog/wp-content/themes/pieces/img/logo.png"
+            alt=""
+          />
+        </div>
+        <div id="navrig">
+          <a href="/products/index">Home</a>
+          <a href="/products/blog">About This Blog</a>
+        </div>
+      </div>
+      <div class="botnav">
+        <select name="" id="beauty" class="options">
+          <option value="">BEAUTY</option>
+          <option value="">Beauty Lab</option>
+          <option value="">Brand Spotlight</option>
+          <option value="">Lets Get Real</option>
+          <option value="">New in</option>
+          <option value="">small talk</option>
+        </select>
+        <select name="" id="fashion" class="options">
+          <option value="">FASHION</option>
+          <option value="">Brand Profile</option>
+          <option value="">Fashion Menu</option>
+          <option value="">Persona Investigator</option>
+          <option value="">Trendspotting</option>
+        </select>
+        <select name="" id="cstyle" class="options">
+          <option value="">CELEBRITY STYLE</option>
+          <option value="">Drama Queens</option>
+          <option value="">K-pop Kloset</option>
+        </select>
+        <select name="" id="lstyle" class="options">
+          <option value="">LIFE STYLE</option>
+          <option value="">Signs & Attires</option>
+        </select>
+        <select name="" id="" class="options">
+          <option value="">IGTV</option>
+          <option value="">Style Dails</option>
+          <option value="">We Tried</option>
+        </select>
+        <select name="" id="" class="options">
+          <option value="">PODCAST</option>
+          <option value="">yes Whut</option>
+        </select>
+        <span>SHOP</span>
+      </div>
+    </div>
+    <div id="container">
+      <div id="blogcont">
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/comse_0.jpg"
+            alt=""
+          />
+          <h4>@cosme 2021 Best Cosmetics Awards</h4>
+          <p class="green">January 18, 2022</p>
+          <p>
+            The site highlighted eight trending keywords, with “cica” being the
+            most popular keyword. …
+          </p>
+          <p class="green">more →</p>
+          <div
+            class="green"
+            style="
+              background-color: darkgray;
+              padding: 15px;
+              margin-bottom: 0px;
+            "
+          >
+            <span><i class="fa fa-folder-open"></i></span><span>BEAUTY</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/k-pop-kloset-portrait-2.png"
+            alt=""
+          />
+          <h4>Recreating Kep1er’s Outfits from “WA DA DA”</h4>
+          <p class="green">January 17, 2022</p>
+          <p>
+            One of the most anticipated K-pop debuts of 2022, “WA DA DA”
+            features glam yet grungy outfits…
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>FASHION, CELEBRITY STYLE, K-pop Kloset</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/15_JAN_MaryMay_antiaging-5-step-routine_blogmain.jpg"
+            alt=""
+          />
+          <h4>Turning Back Time with MARY & MAY’s 5-Step Routine</h4>
+          <p class="green">January 15, 2022</p>
+          <p>
+            How my skin fared after incorporating five products that help slow
+            down skin aging (an anti-aging routine that you can start in your
+            20s)! …
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>BEAUTY,Beauty Lab</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/make-prem-featured-image-1.png"
+            alt=""
+          />
+          <h4>Brand Spotlight: make p:rem</h4>
+          <p class="green">January 14, 2022</p>
+          <p>
+            Go back to the basics with K-Beauty brand make p:rem’s Safe Me line
+            and Defense Me lines for a minimal skin care routine! …
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>BEAUTY,Brand Spotligth</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/Untact-beauty-FEAT-img.jpg"
+            alt=""
+          />
+          <h4>Turning Back Time with MARY & MAY’s 5-Step Routine</h4>
+          <p class="green">January 13, 2022</p>
+          <p>
+            The pandemic is fueling demand for untact, or contact-free, beauty
+            products. Learn more about the untact beauty trend now!…
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span><span>BEAUTY</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/spicules-featured-2.jpg"
+            alt=""
+          />
+          <h4>
+            Ingredient Focus: Spicules – A Natural Alternative to Microneedling
+          </h4>
+          <p class="green">January 12, 2022</p>
+          <p>
+            Learn more about spicules, a natural ingredient derived from sea
+            sponges that works like microneedles to promote skin cell turnover
+            and make skin smoother. …
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>BEAUTY, Ingredient Focus, Ingredient Focus</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/Featured-Image_Portrait_Anti-Heroes.jpg"
+            alt=""
+          />
+          <h4>Style Lessons Inspired By Anti-Heroes</h4>
+          <p class="green">January 11, 2022</p>
+          <p>Learn from the very best on the art of (sartorial) subversion…</p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>FASHION, Persona Investigator</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/pantone_0.jpg"
+            alt=""
+          />
+          <h4>
+            4 Moods Created by Very Peri, Pantone’s Color of the Year 2022
+          </h4>
+          <p class="green">January 10, 2022</p>
+          <p>
+            A hybrid of warm red and cool blue, Very Peri can create a variety
+            of moods ranging from fun, sweet and lush to harmonious and
+            sophisticated.…
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>FASHION, Trendspotting</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/Jan-2022-New-In-ft-img.jpg"
+            alt=""
+          />
+          <h4>New Beauty Releases to Try This Month</h4>
+          <p class="green">January 08, 2022</p>
+          <p>Here are the latest beauty launches at YesStyle at a glance.…</p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>BEAUTY,New In</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/Jan_7_Style-Inspo-From-Your-Stone-Ocean-Zodiac-Twin_blogmain.jpg"
+            alt=""
+          />
+          <h4>Style Inspo Based on Your Stone Ocean Zodiac Twin (Part One)</h4>
+          <p class="green">January 07, 2022</p>
+          <p>
+            Fashion, hair and makeup are never bland in JoJo’s Bizarre
+            Adventures anime series. Look to the Stone Ocean’s cast for style
+            inspo and see which of them shares your zodiac sign!…
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>FASHION, Signs & Attires</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2021/12/featured-3.jpg"
+            alt=""
+          />
+          <h4>January’s Influencer Giveaway</h4>
+          <p class="green">January 06, 2022</p>
+          <p>
+            This month, the YesStyle Influencer Program will be giving away
+            these products for review!…
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>BEAUTY, Influencer Giveaway</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/k-pop-kloset-portrait-4.png"
+            alt=""
+          />
+          <h4>Brand Profile: LIPHOP</h4>
+          <p class="green">January 05, 2022</p>
+          <p>
+            With K-pop girl group (G)I-DLE as its brand ambassador, it’s no
+            surprise that LIPHOP boasts global appeal and sexy yet sophisticated
+            streetwear…
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>FASHION, Brand Profile</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2021/12/BrandSpotlight-UNLEASHIA_blogmain.jpg"
+            alt=""
+          />
+          <h4>Brand Spotlight: UNLEASHIA</h4>
+          <p class="green">January 03, 2022</p>
+          <p>
+            This vegan, eco-conscious and PETA-registered Korean makeup brand
+            specializes in glitter cosmetics that aim to make the wearer feel
+            special…
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>BEAUTY, Brand Spotlight</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/Featured-Image_Portrait_2022-Resolutions-further-revised.jpg"
+            alt=""
+          />
+          <h4>2022 Fashion Resolutions</h4>
+          <p class="green">January 04, 2022</p>
+          <p>Up your style game this year by dressing more optimistically!…</p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span><span>FASHION</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2021/12/2-2.jpg"
+            alt=""
+          />
+          <h4>Brand Profile: LIPHOP</h4>
+          <p class="green">December 31, 2021</p>
+          <p>
+            Following yesterday’s year-end lists of YesStyle’s bestselling skin
+            care, let’s see what we have in store for makeup!…
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span><span>BEAUTY</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2021/12/featured-2.jpg"
+            alt=""
+          />
+          <h4>Say Goodbye to 2021 with Glimmering Makeup Looks</h4>
+          <p class="green">December 29, 2021</p>
+          <p>
+            Choose between a pink-based look inspired by the trending palette of
+            2021 or a classic molten gold look with fiery red lips.…
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>BEAUTY, Look At Me</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2021/12/1-2.jpg"
+            alt=""
+          />
+          <h4>YesStyle’s Skin Care Bestsellers 2021</h4>
+          <p class="green">December 30, 2021</p>
+          <p>
+            Wondering what’s hot at YesStyle? Here are the bestselling skin care
+            items at YesStyle in 2021 based on global sales volume from December
+            16, 2020 to December 15, 2021.…
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span><span>BEAUTY</span>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://www.yesstyle.com/blog/wp-content/uploads/2021/12/Featured-Image_NEOGEN-X-Dreamcatcher_portrait.jpg"
+            alt=""
+          />
+          <h4>
+            Small Talk: NEOGEN X Dreamcatcher “Catch Your Dream Scent” Series
+          </h4>
+          <p class="green">December 28, 2021</p>
+          <p>
+            We satisfied our inner girly girls with this scented collection
+            radiating dreamy vibes! …
+          </p>
+          <p class="green">more →</p>
+          <div class="green" style="background-color: darkgray; padding: 15px">
+            <span><i class="fa fa-folder-open"></i></span
+            ><span>BEAUTY,Small Talk</span>
+          </div>
+        </div>
+      </div>
+      <div id="blogrig">
+        <div>
+          <span><input type="text" placeholder="Search..." /></span
+          ><span
+            ><button><i class="fa fa-search" aria-hidden="true"></i></button
+          ></span>
+        </div>
+        <div>
+          <h3>POPULAR POSTS</h3>
+          <p>@cosme 2021 Best Cosmetics Awards by Maureen N January 18, 2022</p>
+          <p>
+            Recreating Kep1er’s Outfits from “WA DA DA” by Sarah Lau January 17,
+            2022
+          </p>
+          <p>
+            5-Step Brightening Routine with SOME BY MI’s… by Maureen N May 28,
+            2020
+          </p>
+          <p>
+            #TighterPores in 20 Days: MediFlower Mask Pack Review by Zozo Leung
+            May 19, 2021
+          </p>
+          <p>
+            Red Velvet Joy’s Really Red, Stripy Outfit by Dianne G September 4,
+            2019
+          </p>
+          <p>
+            Products to Add to Your Body Care Routine This Winter by Romy Rose
+            December 27, 2020
+          </p>
+          <p>
+            Tony Moly Egg Pore Tightening Cooling Pack Review by Maureen N
+            February 11, 2016
+          </p>
+          <p>
+            The Lazy Girl’s Guide to Self-Care by Michelle Wong October 1, 2021
+          </p>
+          <p>
+            Podcast Ep 3: Yes Tea: Office Astrology by The YesStylist Blog Team
+            September 15, 2021
+          </p>
+          <p>
+            YesStyle’s Makeup Bestsellers Mid-Year 2021 by The YesStylist Blog
+            Team June 30, 2021
+          </p>
+        </div>
+        <div>
+          <h3>CATEGORIES</h3>
+          <select name="" id="">
+            <option value="">Select Category</option>
+            <option value="">Beauty</option>
+            <option value="">Fashion</option>
+            <option value="">Celebrity Style</option>
+            <option value="">Life Style</option>
+          </select>
+        </div>
+        <div>
+          <h3>AUTHORS</h3>
+          <select name="" id="">
+            <option value="">Select Authors</option>
+            <option value="">Agenes wong</option>
+            <option value="">Ariana</option>
+            <option value="">Wilson whu</option>
+            <option value="">Hillary terk</option>
+          </select>
+        </div>
+        <div>
+          <h3>ARCHIVES</h3>
+          <select name="" id="">
+            <option value="">Select Month</option>
+            <option value="">January 2022</option>
+            <option value="">December 2021</option>
+            <option value="">November 2021</option>
+            <option value="">October 2021</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div id="footer" style="display: flex">
+      <div>
+        <p>The YesStylist © 2022 YESSTYLE.COM LTD. All rights reserved.</p>
+        <p class="green">Terms of Use | YesStyle.com Privacy Policy</p>
+      </div>
+      <div id="icons">
+        <span
+          ><i
+            class="fa fa-twitter-square"
+            style="font-size: 30px"
+            aria-hidden="true"
+          ></i
+          >Yes Style on Twitter</span
+        >
+      </div>
+    </div>
+  </body>
+</html>

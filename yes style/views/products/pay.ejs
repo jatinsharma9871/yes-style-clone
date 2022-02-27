@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/pay.css">
+
+</head>
+<body>
+        <div id="headerMainLogo">
+            <img id="mainlogoImg"
+             src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2906/imgs/yesstyle_logo.svg" alt="">
+        </div>
+        <div id="signInBox">
+            <div id="topbar">PAYMENT</div>
+            <form class="choose" action="">
+                <input type="radio" onclick="cardpay()">
+                <label for="" id="card">CARD PAYMENT</label>
+                <input type="radio"  onclick="cod()">
+                <label for="" id="cod" >CASH ON DELIVERY</label>
+            </form>
+            <form class="enter" action="" id="form">
+                <label for="">CARD NUMBER</label>
+                <input id="cardnum" type="text" placeholder="ENTER CARD NUMBER">
+                <label for="">CVV</label>
+                <input id="cvv"  type="text" placeholder="ENTER CVV">
+                <label for="">EXP. DATE</label>
+                <input id="date" type="text" placeholder="ENTER EXP. DATE">
+            </form>
+            <button id="mkp">MAKE PAYMENT</button>
+            <div id="bot">
+                <div>
+                    <img src="  https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2920/imgs/payment/norton_secured.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2920/imgs/payment/satisfaction_guaranteed_en.svg" alt="">
+                </div>
+                <div>
+                    <img src="  https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2920/imgs/payment/satisfaction_guaranteed_en.svg" alt="">
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+<script> 
+let parent=document.body;
+    let btn=document.querySelector('#mkp');
+    btn.addEventListener("click",makepay);
+    function cardpay(){
+         let card = document.getElementById("card")
+        card.style.color = "brown"
+        let cod = document.getElementById("cod")
+        cod.style.color = "black"
+        btn.innerText = "MAKE PAYMENT"
+    }
+    function cod() {
+        let card = document.getElementById("card")
+        card.style.color = "black"
+        let cod = document.getElementById("cod")
+        cod.style.color = "brown"
+        btn.innerText = "ORDER"
+    }
+    function makepay(){
+        let cardnum = form.cardnum.value;
+        let cvv = form.cvv.value;
+        let Date = form.date.value;
+        if(btn.innerText== "MAKE PAYMENT"){
+            if(cardnum.length == 0 && cvv.length == 0 && Date.length == 0){
+                alert("Please fill the card detail")
+            }
+            else if((Date.length != 7) && (cvv.length != 0)){
+                alert("Date Should be in 12/2021 formate")
+            }
+            else if((cvv.length != 3) && (cardnum.length != 0)){
+                alert("CVC should be only 3 digit")
+            }
+            else if(cardnum.length != 14){
+                alert("Card no. should be only 14 digit")
+            }
+            else{
+                let div=document.createElement('div');
+          parent.innerText=null;
+          parent.append(div);
+          div.setAttribute("id","alt");
+          div.textContent="PAYMENT SUCESSFUL"
+        setInterval(function () {
+            window.location.href="/products/index";
+        },1000);
+        }
+        }else if(btn.innerText== "ORDER"){
+          let div=document.createElement('div');
+          parent.innerText=null;
+          parent.append(div);
+          div.setAttribute("id","alt");
+          div.textContent="PAYMENT SUCESSFUL"
+        setInterval(function () {
+            window.location.href="/products/index";
+        },1000);
+        }else{
+            alert("Chose the payment option")
+        }
+    }
+</script>

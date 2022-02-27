@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/signin.css">
+</head>
+
+<body>
+    <div>
+
+        <div id="container">
+            <div id="headerMainLogo">
+                <img id="mainlogoImg"
+                    src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2906/imgs/yesstyle_logo.svg" alt="">
+            </div>
+            <div id="topbar"></div>
+
+            <div id="slide-controls">
+                <input type="radio" name="slider" id="login">
+                <input type="radio" name="slider" id="signup">
+                <label for="login" class="slidelogin">New</label>
+                <label for="signup" class="slidesignup">Member</label>
+                <div class="slider-tab"></div>
+            </div>
+
+            <div id="innerBox">
+                <div id="box1">
+
+
+
+                    <div id="signInBox">
+                        <h2>Register using</h2>
+
+                        <div id="image">
+                            <div><a href="https://www.facebook.com/" aria-label="Facebook"><img
+                                        src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2912/imgs/socialmedia/facebook.svg"
+                                        alt=""></a></div>
+                            <div><a
+                                    href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&response_type=code&redirect_uri=https%3A%2F%2Fwww.yesstyle.com%2Fen%2Fsecure%2Foauth%2Fresponse%3Fysslpt%3D1&client_id=879495958870-t8vrv81mukij5ke5ubeg1djb5aamo560.apps.googleusercontent.com&flowName=GeneralOAuthFlow"><img
+                                        src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2912/imgs/socialmedia/google.svg"
+                                        alt=""></a></div>
+                            <div><a
+                                    href="https://www.paypal.com/connect/?scope=profile%20email&response_type=code&redirect_uri=https%3A%2F%2Fwww.yesstyle.com%2Fen%2Fsecure%2Foauth%2Fresponse%3Fysslpt%3D4&client_id=AeusNZ5byeAW8MiT2EXO58a0Zj6QzXxipygGN2gBvf2Nw7SzpjEY320lLPFjQpzNIsnK_dwjFTTq-cc2"></a><img
+                                    src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2912/imgs/socialmedia/paypal.svg"
+                                    alt=""></div>
+                            <div><a
+                                    href="https://appleid.apple.com/auth/authorize?client_id=com.yesstyle.web&redirect_uri=https%3A%2F%2Fwww.yesstyle.com%2Fen%2Fsecure%2Foauth%2Fresponse%3Fysslpt%3D7&response_type=code%20id_token&scope=name%20email&state=0e1173f7fd414a0aab6ce246795fa43c&response_mode=form_post"><img
+                                        src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2912/imgs/socialmedia/apple.svg
+                            " alt=""></a></div>
+                        </div>
+                        <div class="dot">...</div>
+                        <p style="text-align: center;">or using email address</p>
+                        <form action="" id="myForm1" onsubmit="newM(event)">
+                            <input type="text" placeholder="Email" id="email" required>
+                            <input type="text" placeholder="Password" id="password" required>
+                            <input type="submit" id="btn1">
+                        </form>
+                        <div style="display: flex; margin: auto;width: 70%;color: #4caf50;">
+                            <div style="width:48%;padding: 10px;margin-top: 10px;text-align: center;">Reset Password</div>
+                            <div style="width:48%;padding: 10px;margin-top: 10px;text-align: center;">Order Tracking</div>
+                        </div>
+                        <div style="display:flex;margin:auto;width: 30%;color: #4caf50;padding: 10px;justify-content: center;text-align: center;">Not a Member?
+                        </div>
+
+                    </div>
+                </div>
+                <div id="box2">
+                    <div id="signInBox">
+                        <h2>Sign In Using</h2>
+
+                        <div id="image">
+                            <div><a href="https://www.facebook.com/" aria-label="Facebook"><img
+                                        src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2912/imgs/socialmedia/facebook.svg"
+                                        alt=""></a></div>
+                            <div><a
+                                    href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&response_type=code&redirect_uri=https%3A%2F%2Fwww.yesstyle.com%2Fen%2Fsecure%2Foauth%2Fresponse%3Fysslpt%3D1&client_id=879495958870-t8vrv81mukij5ke5ubeg1djb5aamo560.apps.googleusercontent.com&flowName=GeneralOAuthFlow"><img
+                                        src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2912/imgs/socialmedia/google.svg"
+                                        alt=""></a></div>
+                            <div><a
+                                    href="https://www.paypal.com/connect/?scope=profile%20email&response_type=code&redirect_uri=https%3A%2F%2Fwww.yesstyle.com%2Fen%2Fsecure%2Foauth%2Fresponse%3Fysslpt%3D4&client_id=AeusNZ5byeAW8MiT2EXO58a0Zj6QzXxipygGN2gBvf2Nw7SzpjEY320lLPFjQpzNIsnK_dwjFTTq-cc2"></a><img
+                                    src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2912/imgs/socialmedia/paypal.svg"
+                                    alt=""></div>
+                            <div><a
+                                    href="https://appleid.apple.com/auth/authorize?client_id=com.yesstyle.web&redirect_uri=https%3A%2F%2Fwww.yesstyle.com%2Fen%2Fsecure%2Foauth%2Fresponse%3Fysslpt%3D7&response_type=code%20id_token&scope=name%20email&state=0e1173f7fd414a0aab6ce246795fa43c&response_mode=form_post"><img
+                                        src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2912/imgs/socialmedia/apple.svg
+                            " alt=""></a></div>
+                        </div>
+                        <div class="dot">...</div>
+                        <p style="text-align: center;">or using email address</p>
+                        <form action="" id="myForm2" onsubmit="member(event)">
+                            <input type="text" placeholder="Email" id="email_m" required>
+                            <input type="text" placeholder="Password" id="password_m" required>
+                            <input type="submit" id="btn">
+                        </form>
+
+                        <div style="display: flex; margin: auto;width: 70%;color: #4caf50;">
+                            <div style="width:48%;padding: 10px;margin-top: 10px;text-align: center;">Reset Password</div>
+                            <div style="width:48%;padding: 10px;margin-top: 10px;text-align: center;">Order Tracking</div>
+                        </div>
+                        <div style="display: flex;margin: auto;width: 30%;text-align: center;color: #4caf50;justify-content: center;">Not a Member?</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    var n = document.querySelector("#box1");
+    var m = document.querySelector("#box2");
+    n_btn = document.querySelector("label.slidelogin");
+    m_btn = document.querySelector("label.slidesignup");
+    m_btn.addEventListener('click', ch);
+    n_btn.addEventListener('click', chr);
+    //n_btn.addEventListener('click',change)
+    //console.log(n_btn);
+
+    function ch() {
+
+        n.style.marginLeft = "-50%";
+
+    }
+
+    function chr() {
+        n.style.marginLeft = "0%";
+    }
+    function newM(e) {
+        e.preventDefault();
+
+        let myForm1 = document.getElementById("myForm1");
+        myForm1.addEventListener("submit",chr);
+
+        let email = myForm1.email.value;
+        let password = myForm1.password.value;
+
+        console.log(email, password);
+
+        if (localStorage.getItem('YesUsers') == null) {
+            localStorage.setItem("YesUsers", JSON.stringify([]));
+        }
+
+        var user = {
+            
+            email,
+            password,
+            
+        }
+        
+        
+        let arr = JSON.parse(localStorage.getItem("YesUsers"));
+        arr.push(user);
+        console.log(arr)
+        alert("User successfully registered");
+        localStorage.setItem("YesUsers", JSON.stringify(arr))
+    }
+    
+    if(localStorage.getItem("flagforlogin") === null) {
+        let flag = localStorage.setItem("flagforlogin",JSON.stringify([]));
+    }
+    let flag_login = false;
+
+    function member(e) {
+        e.preventDefault();
+        let myForm2 = document.getElementById("myForm2");
+
+        let email_m = myForm2.email_m.value;
+        let password_m = myForm2.password_m.value;
+
+        let details = JSON.parse(localStorage.getItem("YesUsers"))
+
+        let count = 0;
+
+        details.forEach(function (user) {
+            if (email_m == user.email && password_m == user.password) {
+                count++;
+                flag_login = true;
+            }
+        })
+
+        var login_flag = JSON.parse(localStorage.getItem("flagforlogin"));
+        login_flag[0] = flag_login;
+        login_flag[1] = email_m;
+        login_flag[2] = password_m;
+
+        localStorage.setItem("flagforlogin",JSON.stringify(login_flag));
+
+        if (count == 0) {
+            alert('invalid Credentials')
+        }
+        else{
+              window.location.href="products/index";
+        }
+        
+        // console.log(flag_login);
+   }
+</script>

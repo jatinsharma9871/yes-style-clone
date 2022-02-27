@@ -1,0 +1,84 @@
+.parent{
+    display: flex;
+    width: 200%;
+  }
+  #signInBox{
+      width: 100%;
+      margin: auto;
+      height: auto;
+      border: 2px solid #4CAF50;
+      box-sizing: border-box;
+  }
+  #headerMainLogo
+  {
+      width: 15%;
+      margin: auto;
+      margin-top: 1%;
+      margin-bottom: 1%;
+  }
+  #mainlogoImg{
+      width: 100%;
+  }
+  #topbar{
+      width: 100%;
+      margin: auto;
+      background-color: #4CAF50;
+      height: 60px;
+      padding-top: 30px;
+      color: aliceblue;
+      font-size: 30px;
+      text-align: center;
+  }
+  .choose{
+      margin: 30px;
+      width: 90%;
+  }
+  .enter{
+      width: 50%;
+      margin: 30px;
+  }
+  .enter>input{
+      width: 160%;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      height: 20px;
+  }
+  button{
+      display: flex;
+      margin: auto;
+      width: 50%;
+      justify-content: center;
+      margin-bottom: 30px;
+      height: 30px;
+      padding-top: 8px;
+  }
+  button:hover{
+      background-color: #4CAF50;
+  }
+  #alt{
+      background-color: #4CAF50;
+      border-radius: 10px;
+      justify-content: space-around;
+      box-shadow: 1px 1px 5px 5px rgb(226, 223, 223);
+      width: 34%;
+      margin-top: 300px;
+      height: 100px;
+      margin: auto;
+      font-size: 40px;
+      color: aliceblue;
+      padding: 20px;
+      margin-top: 20%;
+  }
+  #bot{
+      width: 100%;
+      box-sizing: border-box;
+      border-top:  2px solid #4CAF50 ;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 80px;
+  }
+  #bot>div{
+      margin: 5px;
+  }
