@@ -1,0 +1,101 @@
+#heading{
+    border: 1px solid transparent;
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+img{
+    width: 100%;
+}
+hr{
+    width: 450px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #4caf50;
+}
+#content{
+    border: 2px solid;
+    height: 700px;
+    width: 450px;
+    margin: auto;
+    margin-top: 0cm;
+    border-radius: 10px;
+    background-color: white;
+}
+#logo{
+    border: 1px solid transparent;
+    width: 70%;
+    margin: auto;
+    height: 55px;
+    display: flex;
+}
+.sig{
+    border: 1px solid gray;
+    width: 25%;
+    height: 100%;
+
+}
+#fb, #goo, #pay, #app{
+    width: 90%;
+    height: 95%;
+    size-adjust: justify;
+}
+p{
+    font-weight: bold;
+    font-size: large;
+}
+#con{
+    border: 1px solid transparent;
+    margin: auto;
+    width: 75%;
+    height: 380px;
+}
+#email, #password , #btn{
+    margin-left: 40px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: large;
+}
+#password, #btn{
+    margin-top: 50px;
+}
+#btn{
+    height: 50px;
+    background-color: #4caf50;
+    color: white;
+}
+.last{
+    border: 1px solid transparent;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+}
+.write{
+    border: 1px solid transparent;
+    width: 50%;
+    font-size: large;
+    text-align: center;
+    margin-top: 4px;
+    color: #4caf50;
+    font-weight: bold;
+}
+#pka{
+    border: 1px solid transparent;
+    width: 45%;
+    margin: auto;
+    height: 90%;
+    color: #4caf50;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #4caf50;
+}
+body{
+    background-color: #f1f2f6;
+}

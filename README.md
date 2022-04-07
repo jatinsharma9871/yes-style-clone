@@ -1,1 +1,0 @@
-# yes-style-clone

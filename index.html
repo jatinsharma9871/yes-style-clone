@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/1d53f7081d.js" crossorigin="anonymous"></script>
+
+
+
+    <style>
+        body {
+            margin: 0px;
+            background-color: #f1f2f6;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(19, 1fr);
+            grid-gap: 0px;
+            margin: auto;
+
+            border: 1px solid transparent;
+            grid-template-areas:
+                "a a a a a a a a a a a a a a a a a a a"
+                "b b b b b b b b b b b b b b b b b b b"
+                "c c c c c c c c c c c c c c c c c c c"
+                "d d d d d d d d d d d d d d d d d d d"
+                "e e e e e e e e e e e e e e e e e e e"
+                "f f f f f f f f f f f f f f f f f f f"
+                "g g g g g g g g g g g g g g g g g g g"
+                "h h h h h h h h h h h h h h h h h h h"
+                "i i i i i i i i i i i i i i i i i i i"
+                "j j j j j j j j j j j j j j j j j j j"
+                "k k k k k k k k k k k k k k k k k k k"
+                "l l l l l l l l l l l l l l l l l l l"
+                "m m m m m m m m m m m m m m m m m m m"
+                "n n n n n n n n n n n n n n n n n n n"
+                "o o o o o o o o o o o o o o o o o o o"
+                "p p p p p p p p p p p p p p p p p p p"
+                "q q q q q q q q q q q q q q q q q q q"
+                "r r r r r r r r r r r r r r r r r r r"
+                "s s s s s s s s s s s s s s s s s s s"
+            ;
+        }
+
+        #one {
+            border: 1px solid transparent;
+            grid-area: a;
+            height: 55px;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            margin: auto;
+            justify-content: space-around;
+            background-color: white ;
+
+        }
+
+        .changecolour {
+            color: #52b134;
+        }
+
+        #icon1 {
+            display: flex;
+            text-align: center;
+            margin-top: 15px;
+
+        }
+
+        #icon2 {
+            margin-top: 15px;
+
+        }
+
+        #one>div>a {
+            font-size: 20px;
+            margin-left: 35px;
+            color: gray;
+        }
+
+        #one>div>a:hover {
+            color: #52b134;
+        }
+
+        #heading {
+            font-family: tahoma;
+            text-align: center;
+            font-size: 35px;
+            margin-top: -30px;
+        }
+
+
+        #two {
+            border: 1px solid transparent;
+            grid-area: b;
+
+
+            width: 100%;
+
+            height: 35px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            color: #666f84;
+            background-color:white ;
+           
+
+        }
+
+        #two>a {
+            color: #666f84;
+            font-size: 17px;
+            font-style: normal;
+            text-decoration: none;
+            margin-left: 1.2%;
+           
+           
+
+        }
+
+        #two>a:hover {
+            color: #52b134;
+        }
+
+        #three {
+            border: 1px solid transparent;
+            grid-area: c;
+            height: 30px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            font-family: arial;
+            text-align: center;
+            color: #666f84;
+            background-color:white ;
+            margin-top: 0.4%;
+
+
+        }
+
+        #three>div:hover {
+            color: #52b134;
+            background-color: rgb(245, 239, 239);
+        }
+
+        #three>div>p {
+            margin-top: 5px;
+            font-size: 15px;
+        }
+
+        #three>div {
+            width: 33%;
+        }
+
+        #four {
+            border: 1px solid transparent;
+            grid-area: d;
+            width: 80%;
+            margin: auto;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1%;
+            background-image: url(https://elements-video-cover-images-0.imgix.net/files/259540567/Shopping-Mall-Online-Shop.jpg?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=2df3f6716c430568f525b48fdcc7553c);
+        }
+
+        #four>div {
+            margin: auto;
+            text-align: center;
+            width: 35%;
+            height: 180px;
+            border: 3px solid transparent;
+            color: black;
+
+            background-color: white;
+        }
+
+        #four>div>h1 {
+            font-family: Serif;
+            margin-top: -14px;
+            font-size: 42px;
+            font-weight: bolder;
+        }
+
+        #four>div>h2 {
+            font-family: serif;
+            margin-top: 2.5%;
+            font-weight: bold;
+        }
+
+        #four>div>p {
+            color: #666f84;
+            margin-top: -25px;
+            font-family: tahoma;
+
+        }
+
+        #four>div>button {
+            padding: 8px 16px;
+            font-family: arial;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #four>div>button:hover {
+            background-color: #52b134;
+        }
+
+        #five {
+            border: 1px solid red;
+            grid-area: e;
+            width: 80%;
+            margin: auto;
+            height: 85px;
+            background-color: #b41911;
+            margin: auto;
+            margin-top: 2%;
+            text-align: center;
+            font-family: tahoma;
+            justify-content: center;
+            color: white;
+
+        }
+
+        #upper {
+            font-size: 20px;
+            margin-top: -8px;
+        }
+
+        #six {
+            border: 1px solid transparent;
+            grid-area: f;
+            width: 80%;
+            margin: auto;
+            height: 360px;
+            display: flex;
+            margin-top: 2%;
+            gap: 3%;
+        }
+
+        #six>div {
+            width: 32%;
+            height: 280px;
+
+            border: 1px solid transparent;
+        }
+
+        #six>div>div {
+            margin: auto;
+            width: 80%;
+            text-align: center;
+            border: transparent 1px solid;
+            margin-top: 60%;
+            background-color: white;
+            font-family: serif;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+        }
+        #six>div>div:hover{
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
+
+        #six>div>div>p {
+            font-family: tahoma;
+            color: gray;
+            font-size: 15px;
+            margin-top: -4%;
+        }
+
+        #six>div>div>h2:nth-child(1) {
+
+            margin-top: 3%;
+        }
+
+        #six>div>div>h2:nth-child(2) {
+
+            margin-top: -6%;
+        }
+
+
+
+
+        #seven {
+
+            grid-area: g;
+            width: 80%;
+            margin: auto;
+            height: 480px;
+            text-align: center;
+            background-image: linear-gradient(90deg, #f1440a 10%, #55e78d 90%);
+            margin-top: 5%;
+        }
+
+        #seven>h1 {
+            color: white;
+            
+            font-family: serif;
+        }
+
+        #seven>h3 {
+            color: whitesmoke;
+            margin-top: -1%;
+            font-family: serif;
+        }
+
+        #cartdiv {
+            display: flex;
+
+            border: 1px solid transparent;
+            justify-content: space-evenly;
+        }
+
+        #cartdiv>div {
+            width: 18%;
+            height: 280px;
+            border: 1px solid transparent;
+            background-color: white;
+            text-align: left;
+            border-radius: 15px;
+        }
+
+        #cartdiv>div>p {
+            margin-left: 17px;
+            margin-top: 4%;
+            color: gray;
+            font-family: Arial;
+            font-size: 14px;
+        }
+
+        #cartdiv>div>img {
+            border-radius: 15px;
+        }
+
+        #rating1 {
+            width: 85%;
+            margin: auto;
+            height: 6px;
+            background-color: rgb(187, 187, 233);
+            background-image: linear-gradient(90deg, #f1440a 16%, rgb(223, 223, 247) 10%);
+            border-radius: 5px;
+            margin-top: -8px;
+
+        }
+
+        #rating2 {
+            width: 85%;
+            margin: auto;
+            height: 6px;
+            background-color: rgb(187, 187, 233);
+            background-image: linear-gradient(90deg, #f1440a 66%, rgb(223, 223, 247) 10%);
+            border-radius: 5px;
+            margin-top: -8px;
+
+        }
+
+        #rating3 {
+            width: 85%;
+            margin: auto;
+            height: 6px;
+            background-color: rgb(187, 187, 233);
+            background-image: linear-gradient(90deg, #f1440a 46%, rgb(223, 223, 247) 10%);
+            border-radius: 5px;
+            margin-top: -8px;
+
+        }
+
+        #rating4 {
+            width: 85%;
+            margin: auto;
+            height: 6px;
+            background-color: rgb(187, 187, 233);
+            background-image: linear-gradient(90deg, #f1440a 60%, rgb(223, 223, 247) 10%);
+            border-radius: 5px;
+            margin-top: -8px;
+        }
+
+        #rating5 {
+            width: 85%;
+            margin: auto;
+            height: 6px;
+            background-color: rgb(187, 187, 233);
+            background-image: linear-gradient(90deg, #f1440a 83%, rgb(223, 223, 247) 10%);
+            border-radius: 5px;
+            margin-top: -8px;
+
+        }
+
+        #seven>button {
+            padding: 8px 16px;
+            font-family: arial;
+            background-color: black;
+            color: white;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 2%;
+            cursor: pointer;
+        }
+
+        #seven>button:hover {
+            background-color: limegreen;
+        }
+
+        #eight {
+            border: 1px solid transparent;
+            grid-area: h;
+            width: 80%;
+            margin: auto;
+            height: 320px;
+            text-align: center;
+            margin-top: 3%;
+
+
+        }
+
+        #prodpage {
+            justify-content: space-evenly;
+            display: flex;
+        }
+
+        #prodpage>div {
+            width: 15%;
+            height: 220px;
+            border: 1px solid transparent;
+            margin-top: -0.5%;
+
+        }
+
+        #prodpage>div>img {
+            border-radius: 100px;
+        }
+
+        #prodpage>div>img:hover{
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        #prodpage>div>div {
+            background-color: whitesmoke;
+            margin-top: -6%;
+            font-family: tahoma;
+            color: gray;
+        }
+
+        #prodpage>div>div:hover {
+            color: limegreen;
+        }
+
+        #nine {
+            border: 1px solid transparent;
+            grid-area: i;
+            width: 80%;
+            margin: auto;
+            height: 180px;
+            text-align: center;
+            font-family: serif;
+            margin-top: 3%;
+        }
+
+        #nine>h2:nth-child(2) {
+            margin-top: -1.5%;
+        }
+
+        #nine>p {
+            font-family: tahoma;
+            font-size: 14px;
+            margin-top: -1%;
+        }
+
+        #nine>button {
+            padding: 8px 16px;
+            font-family: arial;
+            background-color: black;
+            color: white;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+
+
+        }
+
+        #nine>button:hover {
+            background-color: #52b134;
+        }
+
+        #ten {
+            border: 1px solid transparent;
+            grid-area: j;
+            width: 80%;
+            margin: auto;
+            height: 180px;
+            display: flex;
+            margin-top: 2.5%;
+            justify-content: space-between;
+        }
+
+        #ten>div {
+            border: transparent 1px solid;
+            width: 48%;
+            height: 180px;
+            text-align: center;
+            font-family: serif;
+
+        }
+
+        #ten>div>h2:nth-child(2) {
+
+            margin-top: -3%;
+        }
+
+        #ten>div>button {
+            padding: 8px 16px;
+            font-family: arial;
+            background-color: black;
+            color: white;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+
+        #ten>div>button:hover {
+            background-color: #52b134;
+
+        }
+
+        #eleven {
+
+            grid-area: k;
+            width: 80%;
+            margin: auto;
+            height: 320px;
+            text-align: center;
+            margin-top: 3%;
+            background-color: white ;
+        }
+
+        /* #eleven>h1 {
+           
+        } */
+
+        #eleven>div {
+            width: 95%;
+            height: 210px;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0%;
+
+        }
+
+        #eleven>div>div {
+            width: 49%;
+            height: 210px;
+
+
+            display: flex;
+
+        }
+
+        #imgdiv1>div:nth-child(1) {
+
+            width: 40%;
+            height: 210px;
+
+
+        }
+
+        #imgdiv1>div:nth-child(2) {
+
+            width: 60%;
+            height: 210px;
+
+
+            text-align: left;
+            font-family: arial;
+            font-size: 16px;
+
+
+        }
+
+        #imgdiv2>div:nth-child(1) {
+
+            width: 40%;
+            height: 210px;
+
+
+        }
+
+        #imgdiv2>div:nth-child(2) {
+
+            width: 60%;
+            height: 210px;
+
+            text-align: left;
+            font-family: arial;
+
+        }
+
+        #imgdiv1>div>h3 {
+            margin-left: 4%;
+        }
+
+        #imgdiv2>div>h3 {
+            margin-left: 4%;
+        }
+
+        #imgdiv1>div>h3:nth-child(2) {
+            margin-top: -5%;
+        }
+
+        #imgdiv2>div>h3:nth-child(2) {
+            margin-top: -5%;
+        }
+
+        #imgdiv1>div>p {
+            margin-left: 4%;
+            color: rgb(100, 98, 98);
+            font-size: 14px;
+        }
+
+        #imgdiv2>div>p {
+            margin-left: 4%;
+            color: rgb(100, 98, 98);
+            font-size: 14px;
+        }
+
+        #imgdiv1>div>button {
+            padding: 7px 16px;
+            font-family: arial;
+            background-color: black;
+            color: white;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 4%;
+            cursor: pointer;
+
+        }
+
+        #imgdiv1>div>button:hover {
+            background-color: #52b134;
+
+        }
+
+        #imgdiv2>div>button:hover {
+            background-color: #52b134;
+
+        }
+
+        #imgdiv2>div>button {
+            padding: 7px 16px;
+            font-family: arial;
+            background-color: black;
+            color: white;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 4%;
+
+        }
+
+        #twelve {
+            border: 1px solid transparent;
+            grid-area: l;
+            width: 80%;
+            margin: auto;
+            height: 280px;
+            text-align: center;
+            background-color: white;
+            margin-top: 2%;
+
+        }
+
+        #thirteen {
+            border: 1px solid transparent;
+            grid-area: m;
+            width: 80%;
+            margin: auto;
+            height: 400px;
+            text-align: center;
+            background-color: white;
+            margin-top: 3%;
+        }
+
+        #thirteen>p {
+            color: gray;
+            font-family: tahoma;
+            margin-top: -1%;
+        }
+
+
+        #thirteen>div>img {
+            border-radius: 15px;
+            margin-left: 0.8%;
+
+        }
+
+        #thirteen>div>img:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        #fourteen {
+            border: 1px solid transparent;
+            grid-area: n;
+            width: 80%;
+            margin: auto;
+            height: 330px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+        }
+
+        #fourteen>div:nth-child(1) {
+            width: 23%;
+            height: 270px;
+
+        }
+
+        #fourteen>div:nth-child(2) {
+            width: 43%;
+            height: 270px;
+            border: 1px solid transparent;
+            text-align: center;
+
+        }
+
+        #fourteen>div>button {
+            padding: 7px 16px;
+            font-family: arial;
+            background-color: black;
+            color: white;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 4%;
+
+        }
+
+        #fourteen>div>button:hover {
+            background-color: #52b134;
+        }
+
+        #fourteen>div:nth-child(3) {
+            width: 23%;
+            height: 270px;
+        }
+
+        #fourteen>div>img {
+            border-radius: 15px;
+
+        }
+
+        #fourteen>div>img:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        #fourteen>div>img:nth-child(1) {
+            margin-left: 3%;
+        }
+
+        #fourteen>div>p {
+            color: gray;
+            font-family: tahoma;
+
+        }
+
+        #fourteen>div>p:nth-child(3) {
+            margin-top: -2%;
+        }
+
+        #fifteen {
+            border: 1px solid transparent;
+            grid-area: o;
+            width: 80%;
+            margin: auto;
+            height: 350px;
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        #l1 {
+            width: 100%;
+            height: 100px;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #l1>div {
+            border: 1px solid transparent;
+            width: 16%;
+            height: 100%;
+        }
+
+        #l1>div:hover {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+
+        #l2 {
+            margin-top: 1%;
+            width: 100%;
+            height: 100px;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #l2>div {
+            border: 1px solid transparent;
+            width: 16%;
+            height: 100%;
+        }
+
+        #l2>div:hover {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+
+        #sixteen {
+            border: 1px solid transparent;
+            grid-area: p;
+            width: 80%;
+            margin: auto;
+            height: 180px;
+            font-family: tahoma;
+            background-color: white;
+            margin-top: 3%;
+        }
+
+        #sixteen>div {
+            display: flex;
+            width: 100%;
+            height: 30px;
+
+
+            justify-content: space-between;
+            color: gray;
+        }
+
+        #sixteen>div>div {
+            width: 19%;
+            height: 50px;
+            border: 1px solid transparent;
+        }
+
+        #sixteen>div>div>p:hover {
+            color: #52b134;
+            cursor: pointer;
+        }
+
+        #seventeen {
+            border: 1px solid transparent;
+            grid-area: q;
+            height: 60px;
+            display: flex;
+            color: gray;
+            background-color: white;
+
+
+            width: 100%;
+            align-items: center;
+
+            margin: auto;
+            font-family: tahoma;
+            margin-top: 2%;
+
+
+        }
+
+        #seventeen>p {
+            color: black;
+            font-weight: normal;
+            margin-left: 20%;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        #seventeen>a {
+            color: gray;
+            margin-left: 2.2%;
+        }
+
+        #seventeen>a:hover {
+            color: #52b134;
+        }
+
+
+        #eighteen {
+            border: 1px solid transparent;
+            grid-area: r;
+            height: 200px;
+            display: flex;
+          background-color:white ;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            font-family: tahoma;
+
+        }
+
+        #eighteen>div {
+            width: 20%;
+            height: 100%;
+            border: 1px solid transparent;
+        }
+        #eighteen>div>p{
+            color: gray;
+        }
+        #eighteen>div>h3{
+            font-weight: normal ;
+        }
+        #eighteen>div>p:hover{
+            color: #52b134;
+        }
+
+        #nineteen {
+            border: 1px solid transparent;
+            grid-area: s;
+            height: 70px;
+            
+            width: 100%;
+            margin: auto;
+            background-color: white ;
+            
+        }
+        #nineteen>div{
+            display: flex;
+            
+            width: 100%;
+            height: 40%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid transparent;
+            
+
+        }
+        #nineteen>div>p{
+            color: gray;
+            font-size: 14px;
+
+
+        }
+        #up1>p{
+            margin-left: 1%;
+
+        }
+        #up1>p:hover{
+            color: limegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="one">
+            <div id="icon1">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+                    width="25px" height="20px" style="border-radius: 19px;" />
+              <a href="help.html"> <i class="fas fa-question-circle"></i></a> 
+              <a href=""><i class="fas fa-search"></i></a> 
+            </div>
+
+            <div id="heading">
+                <p><span class="changecolour">Y E S</span> S T Y L E</p>
+            </div>
+
+            <div id="icon2">
+                <a href="mysignin.html"><i class="fas fa-user"></i></a> 
+                <a href=""><i class="fas fa-heart"></i></a> 
+                <a href=""><i class="fas fa-shopping-bag"></i></a> 
+            </div>
+        </div>
+
+
+
+        <div id="two">
+            <a href="">NEW IN</a>
+            <a href="">WOMEN</a>
+            <a href="">BEAUTY</a>
+            <a href="./final.html">MEN</a>
+            <a href="">LIFESTYLE</a>
+            <a href="./index.html">SALE</a>
+            <a href="./blog (1).html">BLOG</a>
+        </div>
+
+
+
+        <div id="three">
+            <div>
+                <p>Details about shipment or delivery</p>
+            </div>
+            <div>
+                <p>Download YS App & Get 100 YS Points</p>
+            </div>
+            <div>
+                <p>10% OFF on your first order</p>
+            </div>
+        </div>
+
+
+
+        <div id="four">
+            <div>
+                <h2>ANNUAL SALE-FINAL WEEK!</h2>
+                <h1>UP TO 70% OFF</h1>
+                <p>Ends Soon</p>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+
+        <div id="five">
+            <div id="upper">
+                <p><span style="font-weight: bold;" ;>10% OFF</span> INR 6,480 order | <span style="font-weight: bold;"
+                        ;>12% OFF</span> INR 8,110 order | <span style="font-weight: bold;" ;>15% OFF</span> INR 12,210
+                    order</p>
+            </div>
+
+            <div id="lower">
+                <p>Enter Code: <span style="color: #f7dc68; font-weight: bold;">NEW22</span> | OFFER Ends In: <span
+                        style="color: #f7dc68; font-weight: bold;">2 DAYS</span></p>
+            </div>
+
+        </div>
+
+
+        <div id="six">
+            <div
+                style="background-image: url(https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12221932/2020/10/6/fc845ff5-a434-48a4-8dca-9b4bf3fb52391601959631371-SASSAFRAS-Women-Black-High-Neck-Cropped-Top-4281601959630186-1.jpg); background-repeat: no-repeat; background-size: cover;">
+                <div id="offer1">
+                    <h2>NEW ARRIVALS</h2>
+                    <h2>20% OFF</h2>
+                    <p>For 24 Hours Only</p>
+                </div>
+            </div>
+
+            <div
+                style="background-image:url(https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16504658/2021/12/13/883e8fb6-4db2-435d-9506-9bec83ffefad1639416531439GingerbyLifestyleRedWrapTop1.jpg) ; background-size: cover; background-repeat: no-repeat ;">
+                <div id="offer2">
+                    <h2>YS BY YESSTYLE</h2>
+                    <h2>UPTO 35% OFF</h2>
+                    <p>More than Basics</p>
+                </div>
+            </div>
+
+
+            <div
+                style="background-image: url(https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/2/18/07b7a314-decd-421a-b447-01b2411e24e61613643428870-1.jpg); background-size: cover; background-repeat:no-repeat ;">
+                <div id="offer3">
+                    <h2>NEW ARRIVALS</h2>
+                    <h2>20% OFF</h2>
+                    <p>Sale ends Jan 26,2022</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="seven">
+            <h1>ANNUAL SALE UPTO 80% OFF</h1>
+            <h3>SALE ENDS ON 26 JAN</h3>
+            <div id="cartdiv">
+                <div><img
+                        src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15034000/2021/10/13/848fc92b-491f-4bf5-a252-a8f05a238d591634103138375-AMI-Women-Pack-of-2-Rose-Gold--White-Brass-Rose-Gold-Plated--1.jpg"
+                        width="100%" height="200px" alt="product img" />
+                    <p><span style="color: rgb(221, 7, 7);">INR 384 </span><span
+                            style="text-decoration:line-through">INR 475</span></p>
+                    <div id="rating1"></div>
+                    <p>Deal is 16% clamed</p>
+                </div>
+
+                <div><img
+                        src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2466435/2020/2/27/0b8e7b6b-f912-4f82-9536-80544b9127631582784256862-Daniel-Klein-Women-Black-Analogue-Watch-DK11421-5-1721582784-1.jpg"
+                        width="100%" height="200px" alt="product img" />
+                    <p><span style="color: rgb(221, 7, 7);">INR 904</span> <span
+                            style="text-decoration:line-through">INR 1,165</span< /p>
+                            <div id="rating2"></div>
+                            <p>Deal is 86% clamed</p>
+                </div>
+
+                <div><img
+                        src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15405110/2021/9/8/9ada60e8-9826-48a7-ba24-5ac21990a9271631096660200LONDONSTEPSCopper-TonedBlockHeeledBoots1.jpg"
+                        width="100%" height="200px" alt="product img" />
+                    <p><span style="color: rgb(221, 7, 7);">INR 2,022</span> <span
+                            style="text-decoration:line-through">INR 2,575</span< /p>
+                            <div id="rating3"></div>
+                            <p>Deal is 46% clamed</p>
+                </div>
+
+                <div><img
+                        src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16491544/2021/12/13/5801aba8-512b-4250-8cae-2f959519669c1639371642546WoodsWomenBlackFloralLeatherWaterResistantBikerJacket3.jpg"
+                        width="100%" height="200px" alt="product img" />
+                    <p><span style="color: rgb(221, 7, 7);">INR 2,555</span> <span
+                            style="text-decoration:line-through">INR 3,075</span< /p>
+                            <div id="rating4"></div>
+                            <p>Deal is 60% clamed</p>
+                </div>
+
+                <div><img
+                        src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16228076/2021/11/24/06e96e60-5c57-4c31-b42d-165c070ea0d11637761187201Eyeshadow1.jpg"
+                        width="100%" height="200px" alt="product img" />
+                    <p><span style="color: rgb(221, 7, 7);">INR 784 </span><span
+                            style="text-decoration:line-through">INR 875</span< /p>
+                            <div id="rating5"></div>
+                            <p>Deal is 83% clamed</p>
+                </div>
+
+
+            </div>
+            <button>MORE ANNUAL SALE</button>
+        </div>
+
+
+        <div id="eight">
+            <h1>RECOMMENDED CATEGORIES</h1>
+            <div id="prodpage">
+                <div><img src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/categories/14121.jpg" width="100%"
+                        height="170px" />
+                    <div>
+                        <p>Fashion Jewelry & Accessories</p>
+                    </div>
+                </div>
+
+                <div><img src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/categories/14090.jpg" width="100%"
+                        height="170px" />
+                    <div>
+                        <p>Tops</p>
+                    </div>
+                </div>
+
+                <div><img src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/categories/15663.jpg" width="100%"
+                        height="170px" />
+                    <div>
+                        <p>Jeans</p>
+                    </div>
+                </div>
+
+                <div><img src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/categories/14255.jpg" width="100%"
+                        height="170px" />
+                    <div>
+                        <p>Blouses & Shirts</p>
+                    </div>
+                </div>
+
+                <div><img src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/categories/16508.jpg" width="100%"
+                        height="170px" />
+                    <div>
+                        <p>Shakets</p>
+                    </div>
+                </div>
+
+                <div><img src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/categories/14093.jpg" width="100%"
+                        height="170px" />
+                    <div>
+                        <p>Skirts</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div id="nine"
+            style="background-image: url(https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/22wk1/l_pa_annual_sale_b.jpg); background-repeat:no-repeat ; background-size:cover ;">
+
+            <h2>NEW YEAR BUTY PICKS </h2>
+            <h2>UPTO 50% OFF</h2>
+            <p>Stay beautiful this 2022!</p>
+            <button>SHOP BEAUTY</button>
+        </div>
+
+
+        <div id="ten">
+            <div
+                style="background-image: url(https://media.istockphoto.com/photos/woman-fashion-accessories-jewelry-and-cosmetics-on-stylish-gray-flat-picture-id931056048); background-repeat:no-repeat ; background-size:cover ;">
+                <h2>FASHION ACCESSORIES </h2>
+                <h2>AS LOW AS US $3</h2>
+                <button>SHOP ACCESSORIES</button>
+            </div>
+
+
+            <div
+                style="background-image: url(https://image.shutterstock.com/z/stock-photo-flat-lay-men-s-fashion-casual-outfits-and-accessories-on-white-wooden-background-687160789.jpg); background-repeat:no-repeat ; background-size:cover ;">
+                <h2>HOME & LIFESTYLE </h2>
+                <h2>AS LOW AS US $2</h2>
+                <button>SHOP LIFESTYLE</button>
+            </div>
+        </div>
+
+
+        <div id="eleven">
+            <h1>THE YESSTYELEST</h1>
+            <div>
+                <div id="imgdiv1">
+                    <div><img style="border-radius: 10px;"
+                            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/k-pop-kloset-portrait-2.png"
+                            width="100%" height="100%" /></div>
+                    <div style="background-color:#d9dcff ;">
+                        <h3>Recreating Kep1er’s Outfits</h3>
+                        <h3>from “WA DA DA”</h3>
+                        <p>One of the most anticipated K-pop debuts of 2022, “WA DA DA” features glam yet grungy
+                            outfits.</p>
+                        <button>READ MORE</button>
+                    </div>
+                </div>
+
+                <div id="imgdiv2">
+                    <div><img style="border-radius: 10px;"
+                            src="https://www.yesstyle.com/blog/wp-content/uploads/2022/01/Featured-Image-Landscape-Anti-Heroes-revised.jpg"
+                            width="100%" height="100%" /></div>
+                    <div style="background-color:#d9dcff ;">
+                        <h3>Style Lessons Inspired By Anti-</h3>
+                        <h3>Heroes</h3>
+                        <p>Learn from the very best on the art of (sartorial) subversion.</p>
+                        <button>READ MORE</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="twelve">
+            <h1>DON'T MISS OUT!</h1>
+            <div> <img src="https://freedesignfile.com/upload/2017/03/Spring-special-offer-banners-vector-01.jpg"
+                    width="100%" height="200px" alt="offer img" />
+            </div>
+        </div>
+
+
+
+        <div id="thirteen">
+            <h1>CHECK OUT OUR YESSTYLERS!</h1>
+            <p>Shop your favorite looks from the @YesStyle feed</p>
+            <div>
+                <img src="https://www.nylonpink.tv/wp-content/uploads/2016/10/Hottest-Korean-Models-Nam-Gyu-Ri.jpg"
+                    width="23%" height="270px" />
+                <img src="https://cdn.wallpapersafari.com/66/14/EC2voO.jpg" width="23%" height="270px" />
+                <img src="https://imgix.ranker.com/user_node_img/590/11795275/original/go-ara-recording-artists-and-groups-photo-u6?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=375"
+                    width="23%" height="270px" />
+                <img src="https://images.saymedia-content.com/.image/t_share/MTc1MTE0NTkzNjkyNDI4MTAw/top-10-most-successful-beautiful-korean-drama-actresses.jpg"
+                    width="23%" height="270px" />
+            </div>
+        </div>
+
+
+        <div id="fourteen">
+            <div> <img
+                    src="https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc2NDY0MzA2NDkyNjE0NjE4/top-10-most-beautiful-korean-actress-2015.jpg"
+                    width="100%" height="100%" /></div>
+            <div><img style="margin-top:8% ;"
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPEhATEBAQFRUQEBAXFRcQEhUQFRAVFhcZFhYWFRUYHCggGBolGxcYITEiJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy8lHyYtLS0tLS0tLS0yLSstLSstLS8tLi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwIDBAUGAQj/xABLEAABAwIACQcGCgkDBQEAAAABAAIDBBEFBgcSITFBUXETImGBkaGxMkJScpLBFCNUYoKTorLR0hUXNENzdLPC4SQzY1Nkw9Pwo//EABsBAAIDAQEBAAAAAAAAAAAAAAAFAwQGAgEH/8QAOxEAAQMCAgYIBQMCBwEAAAAAAQACAwQRBSESMUFRcdETImGBkaGxwRQyUuHwFTM0svEGJEJicsLiI//aAAwDAQACEQMRAD8AnFERCERWamoZE1z5HNa1gJc5xsGgbSSosxsykyPLo6G7G6jKRz3+oD5A6Tp4KeCnknNmjidg/NymhgfKbNUiYZw/S0Y/1E7GEi4bre7gwXJ7FxOFMqjRcUtOTr587s0cQxtyR1hRhJM5xLnOLnONy5xLnOO8k6SVTdOYsMiaOv1j4D871fbQsbrzXX1mUPCMmqRkY3RRt8X5xWrlxmr3+VV1P0ZXM+6QtLde3V1sMbdTR4Bd9A0agtg7C9SddTUHjNIferbqyU65ZDxe4+9Yl17dSaDdy4MQGxX+Vd6Tu0rzPO8q1de3XtlGY1czl7dWrr26FwY1duvQ5Wrqq6FEY1cDjvVQld6R7SrV17dFlG6NZDaqQapHjg9w96vtwpUDVPOOErx71gXXt15ojcozGtvFjDWs1VdT1yvd3ElbGlx5whH+/DxukY13eAD3rmLr264dDG75mg9w5KMsIUi4OymHQKinB3uhdb7DvzLsME4y0lVYRTNzj5j+Y/qadfVdQXdVB3cqcuGQv+Xqns5H7Ly7gvopFEuLePk9OQypzpotVzplYOgnyh0HT0qUKCuiqGNkieHtdqI8CNh6Ck1RSyQHrat67BuspERVl6iIiEIrFVUMia58jg1rGlznONg0DSSSr6iXKrjKXv8AgkTuawgykee/TzODdBPT6qlhiMr9H8sp6aB08gYO/gtLjxjhJXvLGEtgjdzW6jIR57/cNnFcmvUWji0Y2hrcgtIyFsbQ1upeXVQK3uK2KlRhFxzBmRtNnyPBzW9DR5zugdZClvAWJdFR2LYg948+YB5vvaNTOoKOeujhyOZ3c93r2KpUVUcORzO4e+717FDeD8Xa2osYqaVwOp2YWNPBzrDvW+psm+EX+UIWdEkoJHsBymxEufisp+UAeJ9/ZLX17zqAHmogZkrrD5U1MOD5Hf2BXm5KajbVQ+y8qWUUf6lUbx4BRGrl3jwCioZKJvlcf1bvzL0ZKJfljPqj+ZSoi8/Uan6vJvJefFS7/IclFgyUSfLGfUu/9i9/VTJ8sb9SfzqUkXn6jUfV5N5Ln4iTf5Dkou/VS/5Y36g/nT9VUnytn1J/OpRRH6jUfV5N5Lzpn7/IKL/1Vy/K4/qT+defqsl+Vx/Vu/MpRRH6jU/V5DkvOlcosOS6fZVQ+w4e9Wn5MaseTNTHiZG/2lSwi6GJVG8eC80yodmyc17dQgf6kp0+00LUV2LVdBpkpZQBtaBIBxLCQFPKKRuKyj5gD5e/svNJfOIS6nTDOLNJWA8rC3OPns5kg+kNfA3Ci7GrE+ehu8HlISdDwLFl9QkGzjqPRqTKmr45jo6juPsf7Fe2Dlzt1ucWcYpaGTOZdzHEcpHfQ8bxucNhWjuvbq29jXtLXC4K8Ma+g8G10dTGyWJ2c14uDtG8EbCDoIWYocyfYxmkmEUjviZnAG+qN50NfwOgHqOxTGsxVUxgfo7Nn5vG1eEIiIqy8WpxlwoKOmnnNrsYc0HznnQwe0QvnqWRzy5ziS5ziXE63OJuSeJUn5Y8JWbT04PlF0r+DeazquXeyotV+l6rb71pMKg0YdPa702e6LfYm4uPwhPmAlsbLOkePNbfyR851iBwJ2LQ2U84h4FFHSRNIs+QCSS+vOcNDT6osOoqeaoLGZa1JXz9BFcazkPc93rZbqgo46eNkcLAxjAA1rRoA96y0RKVl0REQhEREIRERCEREQhEREIRERCEREQhFrn4bpA7NNVTh24zMB7LqJMeMcZKyR8ULy2nYS0Bpty1tBc47WnYNVtPDkgU3hwouaDIbdiuNo3EXcbL6WY8OAIIIOojSCvJY2vBa4AtcCCHC4IOsEHWFBOKmNM1A9uaS6EnnxE80g6ywea/b07VOdLUNlYyRhDmyNa5pGpzXC4PYVSqqR1ORc3B1FQSwmM5qHce8WfgMofGDyMxObt5N2sxk8NI6Ad1zy91P2MOC21lPLC63Pac0nzHjS13UbL5/la5pLXCzmkhwPmuBsQeBTnD6kzR2drHn2qWLrhVXU24iYXNXSRucbyR/FybyW2s48WkHiSoOuu7yTYRzKmWEnRNFcevGb6OLS72V7iMWnATtGfPy9F5JHldS0iIs2qyg/KjV8phCRuyJkbB7Oce9xXJrb44SZ1dWH/uJR2PLf7VqFYZJkFt6eLQhY3sHjbPzWzxVovhNXTREXD5Y87pa3nO+y0r6JUKZKKcPr2u/wClDK4dBIDPB5U1riV2kUgxl95g3cPMk/ZERFEk6IiIQiIiEIi5rGPHCloLte7Pltojis5w9Y6mjjp3AqOMM5R62e4iLYGboxd5HS9w+6Apo4Hv1alcgoZphcCw3nL7nwUzyytaLucAN7iAO0rXy4xUTTY1lKCNY5eO46rr59q6uWY50ssrzvdI557yrGneVbbQt2u8leGEDa/y+6+iGYyULtVbS/XRjxK2EFQyQXY9rhvaQ4doXzPc7yq4J3xnOje9pG1jiw9oXZw9ux3l90OwkbH+X3X02igvA+UGvp7B8gmaPNmBeep451+JKkbFvH2krSGOPJSnUyQjNefmP1HgbHoVWWkkjz1jsVGahmiF7XHZ+XXXLXYdc4U1UWeUKecttrzgw271sVSRfQdqrA2N1TXzJde3XQ464rSYPmdZpMMjiY36SAD5jjscNWnWBffbnLrXNkbI0ObqK0oDZBpN1FV3U75PHOOD6XO9F4HqiRwb3WUNYt4CmrpWxxNNrjPfbmsbtc479w2qfsH0bKeOOKMWbExrW8Giwv0pXisjdER7b3/ON0tryAA3brWWoMyjUQhr5rapQ2UfT0O+01ynNRNlkgAmpX28uF7T9B1x/UKq4Y609t4PP2VWk/ctvBXAXW5xPq+RraV9/wB+xp4P+LPc5aO6u08uY9j/AEXNd7Jv7k/c3TBbvy8ckwdFcEL6WRU543osekt186YefepqDvqZj2vKwVkYRN5ZDvkee0kqwomyL6GxlmjgPRd3kcZ/qpj6NM8e1Iz8ql9RNkaHx1Uf+Jn3v8KWVIDfNZHGP5bh2D0CIiL1K0REQheEqLsdsoRu6ChdYC4fMNu8RW+/2b1VlMxuPOpKd1tkzmnyjq5IHd6XZvUZqWNovcp/h2GggSyjtA9zx2DdntRzs4kuuSSSSdJJOsk7SqVUqoYXPcGsa5xcbNawFznHcANJVwSJ2W7VbRdxgjJnWSgOmcyFp2OBe/2Gmw63LpabJXSgfGT1Dj8zk4x2FrvFHxLQl8lfTMNtK/DP7eBURIpfmyV0ZHMmqQfnGN47MweK53C2S6qjBMErJQPNPxTzwBJae0LtlWzeuGYhTPNtK3HJcCvVfrKOSB5ZNG9jm62vaWnjp1jp1KwrTZFc0doXdYl5QH02bDVuc+LQA83dJFwJ0uZ0axsvqUvU87ZGtexwc14Ba5puHA6QQRrC+Z13GTjG40jxTzu+JldzSTohcTa/Q0nXuOneqdTThw02a92/8/M9amuoAQZIxntG/wC/rx1zBUQMkaWSNa5rhYteA5rhuIOgrQvxGwYXZxpI77gXtb7Adm9y6RFQbI5vykjgUla9zflJHArFoqKKBoZFGyNo1NjaGDjYLKRFwuEUZZaWc2idudUDtEZ/tUmqOcs4+IpT/wAsnez/AArdAbVDe/0Ks0f77fzYVE90cVSh/FaZpzT/AEM1N36SO9Fx36SO9eLP/DJH8OVxkx5x9Z3iraqdrPErxZwSLf6KkXIz/uVf8OP7zlKqizIwOfW+rD4vUpq7CbsBWJxr+a/g3+kIiIpUqRc5jvh34DTOe0jlJLsj6HEaXcGi542G1dGoVypYVM9YYgeZTNDRuL3WLz4N+guXOsmGGUoqKgNd8ozPAbO82XHucTckkkkkk6SSdZJ3rxFXDC57mtYC4uc1rQNbnONgBxJXokWzI2lZ+LuApq+YRxDRrcT5MbfSd7htU2YuYtU9Ay0TbvI58j9L3dfmt6Bo8UxUwCyggbGLF7udI703nX9Eah0cSt6uy4lY/EMQNQ4sZ8g8+0+w2cUREXKWIiIhC1WG8BU9bHmTszh5rhofGd7HbPA7bqFcbcV5cHSWdzo33zHgWDvmu3EbusdE/rXYcwVFWQvhl8lw0Ea2OHkub0gqWKUs4K9RVrqd1jm3aPcfma+cksszClBJSzSxSDnRvLTuO0OHQQQRxWKr7ZFqgLgEKZsmWMBqqfkpDeSmzRcnS+O3NPEWLTwB2rtlAGI2FfglZC69mvcI5N2ZIQLngc130VP6oztAfltWXxKn6Ga41Oz5+fkQiIihS9FHuWT9mp/45+45SEuAyyfssH8x/wCN6npjaZp7Vaov5DOKh9LIiftkWm0VuOXO9Fg56KO6r9ErZXiumNUlq+eB61NlIuRjyqzhF4vUpKL8jPlVnCLxepQTmlN4gePqVhMc/nP4N/oaiIisJSrc0ga1zjqaCTwGlfOFdVGaSWR2uR73HiXF3vU/4yPLaSrI1imnt0HMNl89EaTxKqVD7EBaj/DsfUkf2gev53LxdrkowWJqp0rhcUzM4fxHXa3uDj1BcUpbyP0wbTTSbXzgdTWNI73lcxOu4BMcWeYqR5G3Lx1+V136IiurDIiIhCIiIQiIiEKLcsOCwDBUtHlXjdxF3NPZn+yFGqm3KjAH4PmJ/dvicOOcGeDioSUrH2yWswh5fSi+wkeh9/BeAaRxX0Zi/V8vTU0p1yQxuPrFozu+6+dFOmTWQuwbTX80St6hI8DusiR2kAq+Nx//ABa/cbeI+y6hERRLNouAyx/skH8wP6b1364DLH+ywfzI/pvUkRtICrdD/IZxUQIqlSmgkWs0VXdeIi96RcaC2To1Q6NZ7o1QY1gU1D12uR9tnVnCHxepMUcZKG2fV+rD4uUjp3R/sjv9SsXjRvWvPY3+kIiIrSVLV4ytvSVY/wC2n7mEr56Os8V9J1EAexzDqe1zTwIsvnKqpzG97Ha2veDxBse8JbXmxaeK1n+G3AskZ2g+N+SsKXskEoNJK3a2oJ6nMZbwKiOy7zJHhEMnlhcbCdgc3pcy5sOLS49ShppR0gumOMwl9G+2yx8DyzUuIiJwsEiIiEIiIhCIiIQuTymyhuDpx6bogPbDvAFQeFKOWLCIDaemB0lxld0ABzG9t39ii9QufZ1lscGiLaQE7ST6D2uvFOeTSO2Dqf53LH/9H2UG2sRxC+hsWaTkaSmjOtsEed6xF3d5K7a66r484CBrd7r+APNbVERdrLIuByw/skP8yP6b13y4LLD+yQ/zA+49eg2N1cw/+SziogRerxWRItjopZFXZF70i50V1D4ladGtlJFpPEq0Y1jrrpsi6jJe2zqr1YvFykFcHk4bZ9R6rPErvE7of2B3+pWUxY3q3Hsb/SEREVtLUUMZRcFGGse8Dmz2eOJ0OHHOBPWFM65nHnAvwunJaLyQ3e3eR57esaeLQqtZEZIjbWMwmmEVYp6kaRydkfY9xt3XUKFiu0U74ZY5WGzonMIPSDfT0bCNxKuOYqSxIGv2hbrS2FTtgDCrKyFkzPO0ObtY7zmnh3ix2raKDsVsYJcHy3HOjdYPjvocN43Eb+o9Ew4KwrDVRiSF4cNo1OYfRcNhT+mqWzN/3bVhMTw11I+7c2HUd3Ye31WwREVpLEREQhFh4RrWU8b5ZDZkbS5x6NwG0nUBtJXtfXRQMMksjWMGtzjYcBvPQNKhzHfG51e/k47tgYbgHQXn0ne7dx1QzTiIdqYYdh0lY/LJo1n2G8ny1laTGDCz62okmdoz380a81o0AdQ77natciJeJLrdtja1oa0WAyHBbfFHBZq6uCMi7c4F/qN5zu0DtcF9BrgslmATBC6okbZ87QGA+bENN/pHTwaF3qYQDq3O1YzG6kS1Gg05My79vLuRERTJOi4HLD+yw/x/7HrvlwGWE/6aD+MfuOXLzYXV7DR/m4+KiJeoi4bItvoq/wAmizuR6EXXSKrpLsKiLnO9Z3irBjW2whF8bJ/Ef4lYpjWbdrKptkyC3WITbSTdMbfFduuLxKFppOmM9zm/iu0Tug/ZHE+qQYnnUE9gRERXEvRERCFGGPWLXIuNRE34t7ueB+7cf7Sew6Ny40sU+Sxte0tcAWuBBBFwQdYIUbY04oOgJkgBdHpJGt0fHe3p2bd6R11EWkyRjLaN3bw9PTU4Vige0QynrDIHf2cR58dfEliv4PrZqZ4dBI5pG1p1jc4aiOgqssVBYlbZCDcJ8SCCCMl22DMo5AAqob/OiIBP0XaO8LfQY+YPcOdI9nRJG7xaCFE5YqSxX2YlMBY2PFLJMGo5DcAt/wCJ5g+WSluXHvB7dUzndDYn+JAC0WE8pzQLU0DidhmIAH0WE39oKPixUFi7diMrhbIcF7FglGw3ILuJ5AK7hrDFTWOzp5Hutqbqa3g0aG8de8rWFqyyxUlirGQk3Kcs0WNDWiwGoDJYll1OImKzq6XPeCIYiM86s86wxp6du4cQruKmJsta4OfeOEHS62l29rAdfHUOnUpfwfQx08bY4mhrGCwA8TvJ1k7UxpKdz+s7V6/ZJcWxZsDTFEevtP0/+vTisljA0AAAAAAAaAANQAVaImyxaIiIQijzLEfiKYb5n/cKkNRrlmfzKMb3zHsawe9RTmzCUywht62McfQqLkP4L1CqIkW7Dcwu0/R3Qi7L9Gu3LxXNFY/4xyt4Ui+Nl/iP7ySsJ0a3uGofjX/Ose7/AAtc6NIJhoyOHaVJFLdgPYFk4r82b1o3DwPuXYri8HHMljducB1HQfFdom2HOvERuKW4hnIHdnuURETBUEREQhEREIXL4cxPgqLuj+KefRHMceluw9I71xOE8WKqC+dGXNHnR85vE20jrAUvIqE+HQym4yPZyTOmxWeEaJ6w7eevxuFBJj6FbLFNtTgyCX/chicd7mAnt1rWyYoULv3AHqveO7Osl7sJlHyuB43HNNWY7CR1mkcLHkohLFS6NS+zE6gH7i/GST8yz6bA9NHpjp4gd+YCe06V63CpT8zh5n2C7dj0A+Vrj4D3KiHB2LlVUkcnC+x854zGe0dB6rruMA4gQwkPqCJXDzRojB6dr+uw6F26K/Dh8UeZzPbySupxqolGizqjs1+PKyoYwNAAAAAAAGgADYAq0RX0oRERCEREQhFFeWSa8lLHuZI7hnmw+4exSooYymVQmrXAaoWMZ2Xce9xHUqla60Vt5TrAGaVYHfSCf+vuuNVcEZc5oGtzm24uNh4qoxraYpUvKVtK3/mYTwDs49wKVNJJstq94Y0v3AnwzU+8m3cEVaLQr5fcrUYcgvmu4g+I9605jXUVUWewj/7QtEWJBiEejLpb/wCx9kyppOpbcsJ0a6fB83KRtO21jxGv8etaIxrJwfPyTtPku19HSuaKcRSdbUdfsfzZddVDekblrC3yKkHcqloEsRERCEREQhEREIRERCEREQhEREIRERCEREQhEREIWHhKsbBFJK7VG0nidgHSTYdagqse6SR736XPc4k9JNz3ldvjzhz4Q4QxG8bHXcRqe8bt7R3ngFx7o0mrJukfYah6rXYNTGniLnfM63cBq8dfhussB0a7DJbg7Oqnykf7EbvafzW/Zz1zbo1K+IeC/g9K0uFnzHlDvAIswezp+kVxRx6co7M/zvVjFqro6Vw2u6vjr8r+K6ZERPFiUWpwhT5pzhqd3FbZUSMDgQdRVepgEzNHbs4ruN+g660KK7UwGM2OrYd6tLOOaWktcLFMQQRcLIpaox6Dpbu3cFtIpmv8k38R1LRoDZW6eufENE5j04FRSQh5vtXQotMytkG2/errcJO2t7LhMW4lCddx3crquad4W0Ra79J/M+1/hP0oPQPaFKK6nP8Aq8jyXPQyblsUWu/SrfQd3Lw4WZ6D+78V78ZB9Q8+SOgk3LZItWcMs9F/d+K8OG2ei/u/FHxkH1Be/Dy7ltUWoOHWeg/7P4rw4fj9B/2fxXvxcP1Be/DS/Stwi0pxgj9CT7P4qk4xM9B/d+K8+Lh+r1Xvws30+i3iLQHGZn/Sf2hWzjSNkJ6329y8+Ng+r15LoUU5/wBPmOa6NFykmNUnmxMHFxd7gtfVYw1L9Tgz1G27zcrh2IQjVc93OykZh0ztdh38rrsqyrjhbnSva0dJ18BrJ4LiMYsZnzAxw3ZGdDidDnjd81vee5aycueS57nOJ2uJce0qw6NUZ618g0W5DzKaUuHxxEOcdI+Q4D3PdnmsAxq0Y1sHRrIwdguSoeGRjiTqaN5VMAk2CbGUNBJOSYq4C+FTAuHxcZDnnY7czr8LqVlg4KwdHTRtjj1DSSdb3bXFZyfU0HQsttOtZWvrDUyXHyjVz70REVlUUREQhUSMDhYi4WrqaNzNI0jvHFbdFWnpWTDra96kZIWalzyLcTUbH7LHeNCw5MHOHkkHuKUSUEzNQvw5a/C6ttnaexYaK4+meNbewX8FbItrVRzS35gRxyUoIOpERFzderyypLFWiEKyY1Q6NZKWXq6DisN0atGNZxaqTGhdaa17o1QY1nujVLo0KQPWudGqHRrPdGqHRr24Ugete6NW3RrYclfUOxXGYOldqjf2Ed5XTQXfLnwzXfS21rUujVt0a6SDF6V3lFrR2nsGjvW0o8Bwx6SM8736R1N1K3HRTP2W48taifiETNt+H5ZctgvAMtQQbZrNrnDX6o2+C7TB1BHTszIxbeTpLjvJWWiawUrIdWZ3pVU1j58jkN3PeiIisqqiIiEIiIhCIiIQiIiEIiIpG6l4VjTLDlREpqVbjWO5UlESpyshFSiKIr1eKtEQEKkrxEUrUK4xZ0CImlMoJFsERE2OpUUREXC9RERCEREQhEREIX//2Q=="
+                    width="8%" />
+                <p>Tag @YesStyle on Insta</p>
+                <p>to share your favorite looks with fellow YesStylers!</p>
+                <button>MORE DETAILS</button>
+            </div>
+            <div> <img
+                    src="https://cf.creatrip.com/original/blog/7929/qxzo853z6ug2q3e6u6fe04z1b9mqmscd.png?d=500&q=80&f=jpg"
+                    width="100%" height="100%" /></div>
+        </div>
+
+
+        <div id="fifteen">
+            <h1>NOTABLE BEAUTY BRANDS</h1>
+            <div id="l1">
+                <div><img src="https://maxluxe.ae/cheeghoa/2021/04/COSRX.png" width="100%" height="100%" /> </div>
+                <div><img
+                        src="https://m.media-amazon.com/images/S/aplus-media/sota/6cf06652-6e73-490f-afd9-26e4ad7b7691.__CR0,0,600,180_PT0_SX600_V1___.jpg"
+                        width="100%" height="100%" /></div>
+                <div><img
+                        src="https://www.abholic.com/image/cache/catalog/03_System_img/Brand%20Logo/IMFROM-600x315w.png"
+                        width="100%" height="100%" /></div>
+                <div><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapklKUDkSip9a-gkuxmFQ2cKyK7kl8urrcxI5OcvRMyHIYMLyMQ1K1xh784eHMrz8coM&usqp=CAU"
+                        width="100%" height="100%" /></div>
+                <div><img src="https://i.ytimg.com/vi/eWiCRnqhOxw/mqdefault.jpg" width="100%" height="100%" /></div>
+                <div><img
+                        src="https://cdn.shopify.com/s/files/1/1321/7315/files/iUniks_704f7768-5729-4999-8ae2-a202e0794a64_large.jpg?v=1536556301"
+                        width="100%" height="100%" /></div>
+            </div>
+
+
+
+            <div id="l2">
+                <div><img src="https://www.oneclickshop.bt/wp-content/uploads/2021/01/missha-logo-one-click-shop.png"
+                        width="100%" height="100%" /></div>
+                <div><img src="https://mim-shop.com/wp-content/uploads/2020/11/20200526_160011_ROMND-01.jpg"
+                        width="100%" height="100%" /></div>
+                <div><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxqix6vfJIWgqu9sY83BdRVePcJyUu-tP9K9MvjU9t_wJNIAwy2X2OTZazhW6NXFjqOg&usqp=CAU"
+                        width="100%" height="100%" /></div>
+                <div><img src="https://s2.tryandreview.com/uploads/images/brands/brand_logo_eaxitkaigxra.jpg?v83"
+                        width="100%" height="100%" /></div>
+                <div><img src="https://ntltec.com/images/feature_variant/9/ROTHO_MENTHOLATUM_LOGO.png" width="100%"
+                        height="100%" /></div>
+                <div><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgLVoXEomIy7SuECwM1Ua1cSUU7Ta5Da8GqXau_5jbwPpf2UmcYl0sWtyHVHif5Z2vnA&usqp=CAU"
+                        width="100%" height="100%" /></div>
+            </div>
+        </div>
+
+
+        <div id="sixteen">
+            <h3>You may also be interested in</h3>
+            <div>
+                <div>
+                    <p>Beta Hydroxy Acid</p>
+                </div>
+                <div>
+                    <p>Hyaluronic Acid</p>
+                </div>
+                <div>
+                    <p>K Beauty</p>
+                </div>
+                <div>
+                    <p>Korean BB Creams</p>
+                </div>
+                <div>
+                    <p>Koren Face Masks</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p>Korean Lip Tints</p>
+                </div>
+                <div>
+                    <p>Korean Moisturizers</p>
+                </div>
+                <div>
+                    <p>Korean Makeup</p>
+                </div>
+                <div>
+                    <p>Korean Sunscreen</p>
+                </div>
+                <div>
+                    <p>Korean Skin Care</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p>Probiotic Skincare</p>
+                </div>
+                <div>
+                    <p>Vitamin C Serum</p>
+                </div>
+                <div>
+                    <p>Bucket Hats</p>
+                </div>
+                <div>
+                    <p>Pimple Patches</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="seventeen">
+            <p>Follow Us</p>
+            <a href="https://www.facebook.com/YesStyle/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/yesstyle"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/yesstyle#xd_co_f=ZDczM2JhMzctMmM5OS00NDdmLTlmOTktMzI5MjExN2Q5M2E1~"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://yesstyle.tumblr.com/"><i class="fab fa-tumblr"></i></a>
+            <a href="https://www.pinterest.com/yesstyle/#xd_co_f=ZDczM2JhMzctMmM5OS00NDdmLTlmOTktMzI5MjExN2Q5M2E1~"><i
+                    class="fab fa-pinterest-p"></i></a>
+            <a href="https://www.yesstyle.com/en/app">Download our app and earn 100 YS Points</a>
+            <a href="https://apps.apple.com/us/app/yesstyle/id868675907"><i class="fab fa-apple"></i></a>
+            <a href="https://play.google.com/store/apps/details?id=com.yesstyle.android"><i
+                    class="fab fa-google-play"></i></a>
+        </div>
+
+
+        <div id="eighteen">
+            <div>
+                <h3>SUPPORT</h3>
+                <p>Order Tracking</p>
+                <p>Contact Us</p>
+                <p>Customer Service</p>
+            </div>
+
+            <div>
+                <h3>PROGRAM</h3>
+                <p>Elite Clubs</p>
+                <p>Friend Rewards</p>
+                <p>Student Pragram</p>
+            </div>
+
+            <div>
+                <h3>PARTNERSHIP</h3>
+                <p>YesStyle Influencer</p>
+                <p>Affiliate Program</p>
+                <p>School Organization</p>
+            </div>
+
+            <div>
+                <h3>ABOUT US</h3>
+                <p>About YesStyle</p>
+                <p>YesAsia Holdings</p>
+                <p>Wholesale</p>
+            </div>
+        </div>
+
+
+        <div id="nineteen">
+            <div id="up1">
+                <p>English</p>
+                <p>Francias</p>
+                <p>Deutsch</p>
+                <p>Espanol</p>
+                <p>Italiano</p>
+                <p>조선말</p>
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+                <p>Cookie Prefrences</p>
+            </div>
+           
+            <div><p>Copyright © 2006-2022 YESSTYLE.COM LTD. All rights reserved.</p></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

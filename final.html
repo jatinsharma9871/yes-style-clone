@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="./addtobag.css">
+    <style>
+        
+         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@400;700&family=Poppins&family=Roboto:wght@100;300&display=swap');
+        .container{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 4700px;
+            display: flex;
+            gap: 10px;
+
+        }.navbar{
+            height: 140px;
+            margin-bottom: 20px;
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+        .box-1{
+            height:100%;
+            width:400px;
+            /* border:1px solid teal; */
+        }
+        .box-2{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(400px,1fr);
+            height: auto;
+            width:100%;
+            height: 100%;
+            /* border: 1px solid blue; */
+            row-gap: 30px;
+            column-gap: 15px;
+
+        }
+        .box-2>div{
+            height: 370px;
+            width: 100%;
+            /* border: 2px solid green; */
+            margin-top: 30px;
+          
+
+        }
+        p{
+            font-family: 'Lato', sans-serif;
+            color: black;
+            font-weight: bolder;
+            font-size: 14px;
+        }
+        .star{
+            height: 30px;
+            width: 100%;
+            /* border: 2px solid purple; */
+            color: gold;
+        }
+        
+        
+       
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <header class="main-header">
+            <div class="headerBox">
+                <div class="upperHalfInNav">
+                    <div class="upperHalfItems">
+                        <div class="firDivUpperHalf">
+                            <button class="btn-icons" > 
+                                <img class="smallIcons" src="https://img.icons8.com/color/2x/india-circular.png
+                                ">
+                            </button>
+                            <button class="btn-icons">
+                                <img class="smallIcons" src="https://img.icons8.com/ios-glyphs/2x/help.png">
+                            </button>
+                            <button class="btn-icons">
+                                <img class="smallIcons" src="https://img.icons8.com/ios/2x/search.png
+                                ">
+                            </button>
+                        </div>
+    
+                        <img id="headerMainLogo" src="https://ddvql06zg3s2o.cloudfront.net/Assets/res/p/2906/imgs/yesstyle_logo.svg" alt="">
+    
+                        <div class="secDivUpperHalf">
+                            <button class="btn-icons">
+                                <img class="smallIcons" src="https://img.icons8.com/pastel-glyph/2x/person-male--v3.png
+                                ">
+                            </button>
+                            <button class="btn-icons">
+                                <img class="smallIcons" src="https://img.icons8.com/ios/2x/like.png">
+                            </button>
+                            <button id="btnAddToCart" class="btn-icons" onclick="addToCartNew()">
+                                <img class="smallIcons" src="https://img.icons8.com/ios-glyphs/2x/shopping-bag.png
+                                ">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lowerHalfInNav">
+                    <div class="lowerHalfItems">
+                        <p id="NewInPara" class="pagesRedirector">NEW IN</p>
+                        <p class="pagesRedirector">WOMEN</p>
+                        <p class="pagesRedirector">BEAUTY</p>
+                        <p class="pagesRedirector">MEN</p>
+                        <p class="pagesRedirector">LIFESTYLE</p>
+                        <!-- <p id="saleRedirector" class="pagesRedirector" >SALE</p> -->
+                        <p><a href="./index.html">SALE</a></p>
+                        <p class="pagesRedirector">BLOG</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </header>
+    </div>
+   <div class="container">
+       <div class="box-1"></div>
+
+       
+       <div class="box-2">
+        <div id="n">
+            <!-- //////////////add this line////////<a href="addtobag.html"> -->
+            <a href="addtobag.html"><img height="75%" src="https://d1flfk77wl2xk4.cloudfront.net/Assets/28/050/M_p0105105028.jpg" alt="">
+            </a>
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span style="background: grey;color: black;">329</span></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+        </div>
+
+        <div id="n">
+            <a href="addtobag.html"> <img height="75%" src="https://d1flfk77wl2xk4.cloudfront.net/Assets/97/981/M_p0128698197.jpg" alt="">  </a>
+            <p>OSIGRANDI-cartoon Milk Print Short-Sleeve T-shirt</p><br>
+            <p>US$ 15.56</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span style="background: grey;color: black;">329</span>    
+            </div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="75%"width src="https://d1flfk77wl2xk4.cloudfront.net/Assets/41/778/M_p0106677841.jpg" alt="">  </a>
+            <p>DuckleBeam - Reverdible Plaid Zip Jacket</p><br>
+            <p>US$ 28.67</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-half-alt"></i></i><i class="fas fa-star-half-alt"></i>
+                <span style="background: grey;color: black;">329</span></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"></a><img height="75%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/42/901/M_p0136590142.jpg" alt="">  </a>
+            <p>InStudio - Plain Wide-Leg jeans</p><br>
+            <p>US$ 29.70</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span style="background: grey;color: black;">329</span>
+            </div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"> <img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/42/722/M_p0135772242.jpg" alt="">  </a>
+            <p>Juanitro - Layered Pandent Necklace</p><br>
+            <p>US$ 6.55</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">329</span></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"> <img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/95/596/M_p0141259695.jpg" alt="">  </a>
+            <p>Oakjam - Cat Pattern Sweater</p><br>
+            <p>US$ 22.80</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-half-alt"></i></i><i class="fas fa-star-half-alt"></i>
+            <span style="background: grey;color: black;">329</span></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/61/333/M_p0148533361.jpg" alt=""></a>   
+            <p>GRACIOUS - Cropped Straight Leg Pants</p><br>
+            <p>US$ 15.64</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">329</span></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/57/527/M_p0095052757.jpg" alt=""></a>
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 15.64</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-half-alt"></i>
+            <span style="background: grey;color: black;">329</span></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/65/094/M_p0114309465.jpg" alt=""></a>  
+            <p>DandyLuxe - Long Sleeve Plain T-Shirt </p><br>
+            <p>US$ 13.73</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">329</span></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: skyblue;background: skyblue;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: orangered;background: orange;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: maroon;background: maroon;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/37/961/M_p0131796137.jpg" alt=""></a> 
+            <p>Wewewow - Mock Two Piece Elbow - Sleeve T-Shirt</p><br>
+            <p>US$ 13.89</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span style="background: grey;color: black;">329</span></div>
+                <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i></i>
+                <i style="color: grey;background: grey;border-radius: 100%;font-size: 15px"class="far fa-circle"></i></i>
+                <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/83/243/M_p0134324383.jpg" alt=""></a> 
+            <p>Soulcity - Drawstring Hodded Jacket</p> <br>
+            <p>US$ 27.71</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-half-alt"></i>
+            <span style="background: grey;color: black;">329</span></div>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/60/860/M_p0124886060.jpg" alt=""></a> 
+            <p>DuckleBeam - Couple Matching Lettering Baseball Jacket</p> <br>
+            <p>US$ 31.20</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">329</span></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/45/943/M_p0145194345.jpg" alt=""></a> 
+            <p>Instudio - High waste Jeans Wide - leg Jeans</p><br>
+            <p>US$  28.79</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-half-alt"></i></i><i class="fas fa-star-half-alt"></i>
+            <span style="background: grey;color: black;">329</span></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: red;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/43/666/M_p0136266643.jpg" alt=""></a> 
+            <p>Linsi - Plaid Wide Leg jeans</p><br>
+            <p>US$ 13.40</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">200</span></div>
+        </div>
+        <div id="n">
+           <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/60/199/M_p0112719960.jpg" alt=""></a> 
+            <p>Gracious Plain Shirt</p> <br>
+            <p>US$ 4.58</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span style="background: grey;color: black;">154</span></div>
+                <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/64/820/M_p0120882064.jpg" alt=""></a> 
+            <p>Tinsletown - Stainless steel Ring(Various Designs)</p><br>
+            <p>US$ 17.22</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">199</span></div>
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/66/398/M_p0158739866.jpg" alt=""></a> 
+            <p>Chuoke - Japanese print Short T-Shirt</p> <br>
+            <p>US$ 13.64</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span style="background: grey;color: black;">329</span></div>
+                <i style="color: purple;background: purple;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+            <img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/51/728/M_p0140472851.jpg" alt="">
+            <p>Gracious Baseball Jacket</p>
+            <p>US$ 28.70</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span style="background: grey;color: black;">67</span></div>
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/89/901/M_p0138390189.jpg" alt=""></a> 
+            <p>Phonious - Wide leg Jeans</p> <br>
+            <p>US$ 22.67</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">22</span></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/31/168/M_p0156416831.jpg" alt=""></a>  
+            <p>Shioneon studi0 Lattering Sweatshirt</p><br>
+            <p>US$ 24.79</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-half-alt"></i></i><i class="fas fa-star-half-alt"></i>
+            <span style="background: grey;color: black;">180</span></div>
+            <i style="color: blue;background: blue;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>   <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/03/580/M_p0123558003.jpg" alt=""></a>  
+              <p>Garcious Two tone Versity Jacket</p><br>
+            <p>US$ 24.34</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">5</span></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/87/427/M_p0118642787.jpg" alt=""></a>   
+            <p>Porstina - Bear Elbow Sleeve T-Shirt</p>
+            <p>US$ 15.06</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">567</span></div>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/46/940/M_p0129094046.jpg" alt=""> </a>  <p>Long sleeve Stripped T-shirt</p><br>
+            <p>US$ 19.97</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="fas fa-star-half-alt"></i>
+             <span style="background: grey;color: black;">29</span></div>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/78/517/M_p0137851778.jpg" alt=""></a> 
+            <p>MARCYC - Plaid - Cardigan</p><br>
+            <p>US$ 55.43</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="fas fa-star-half-alt"></i></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/23/965/M_p0094596523.jpg" alt=""></a> 
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">329</span></div>
+
+        </div>
+        <div id="n">
+             <a href=""><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/06/459/M_p0162445906.jpg" alt=""></a> 
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/05/198/M_p0112419805.jpg" alt=""></a> 
+            <p>Bunny Cargo caps</p> <br>
+            <p>US$ 21.34</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/75/128/M_p0148312875.jpg" alt=""></a> 
+            <p>holoiuj  Leg Cargo jeans</p><br>
+            <p>US$ 34.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/81/394/M_p0138039481.jpg" alt=""></a>  
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: black;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/12/269/M_p0167026912.jpg" alt=""></a> 
+            <p>Magma-Straight Leg Cargo Pants</p> <br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: brown;background: brown;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/84/603/M_p0143960384.jpg" alt=""></a>  
+            <p>Magma-Straight Leg Cargo Pants</p> <br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: brown;background: brown;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/59/609/M_p0135960959.jpg" alt=""></a> 
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/20/977/M_p0138497720.jpg" alt=""></a> 
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+             <span style="background: grey;color: black;">329</span></div>
+             <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+             <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+             <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+             <i style="color: skyblue;background: skyblue;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+             <i style="color: orange;background: orange;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/38/080/M_p0126108038.jpg" alt=""></a> 
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">567</span></div>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: green;background: green;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: brown;background: brown;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/95/349/M_p0083234995.jpg" alt=""></a> 
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span style="background: grey;color: black;">329</span></div>
+                <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: greenyellow;background: greenyellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: red;background: red;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: magenta;background: magenta;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: brown;background: brown;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/87/134/M_p0118513487.jpg" alt=""></a> 
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span style="background: grey;color: black;">329</span></div>
+                <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: greenyellow;background: greenyellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: magenta;background: magenta;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/74/437/M_p0140243774.jpg" alt=""></a> 
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span style="background: grey;color: black;">329</span></div>
+            <i style="color: red;background: grredeen;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: black;background: white;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: yellow;background: yellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/41/717/M_p0143071741.jpg" alt=""></a>  
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span style="background: grey;color: black;">329</span></div>
+
+        </div>
+        <div id="n">
+             <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/75/365/M_p0146436575.jpg" alt=""></a> 
+              <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span style="background: grey;color: black;">329</span></div>
+                <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: greenyellow;background: greenyellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: magenta;background: magenta;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+
+        </div>
+        <div id="n">
+            <a href="addtobag.html"><img height="70%"src="https://d1flfk77wl2xk4.cloudfront.net/Assets/17/639/M_p0133863917.jpg" alt=""></a> 
+            <p>Magma-Straight Leg Cargo Pants</p><br>
+            <p>US$ 21.25</p>
+            <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span style="background: grey;color: black;">329</span></div>
+                <i style="color: pink;background: pink;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: greenyellow;background: greenyellow;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+                <i style="color: magenta;background: magenta;border-radius: 100%;font-size: 15px"class="far fa-circle"></i>
+            
+
+        </div>
+        
+        
+       
+       </div> 
+<div></div>
+   </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/3347d6e76d.js" crossorigin="anonymous">
+
+function goGoogle() {
+  window.location = 'cart.html'
+}
+</script>
